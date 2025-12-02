@@ -7,7 +7,7 @@ const LongTimeGraphsImage = () => {
       <div className="flex flex-col px-4 md:px-8 pb-4 md:py-[17px]">
         <div className="flex flex-col relative">
           <div className="flex items-start justify-between">
-            <div className="text-[#61279E] text-[48px] md:text-[80px] font-semibold leading-[120%] md:leading-[110%] tracking-[-1.92px] md:tracking-[-4px]">
+            <div className="text-[#e74c39] text-[72px] md:text-[104px] font-semibold leading-[120%] md:leading-[110%] tracking-[-1.92px] md:tracking-[-4px]">
               92%
             </div>
             {/* Info Icon - visible on mobile only, positioned to the right */}

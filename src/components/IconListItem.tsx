@@ -73,7 +73,7 @@ function IconListItem({
             className="absolute pointer-events-none"
             style={{
               left: isMobile ? "-16px" : "calc((100vw - 1360px) / 2 * -1 - 40px)",
-              right: `calc(100% - ${adjustedIconSize - 10}px)`,
+              right: `calc(100% - ${adjustedIconSize}px)`,
               top: "50%",
               transform: "translateY(-50%)",
               height: `${adjustedIconSize}px`,

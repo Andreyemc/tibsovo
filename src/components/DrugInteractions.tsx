@@ -2,11 +2,12 @@ import d1 from "../assets/drug/1.svg";
 import d2 from "../assets/drug/2.svg";
 import d3 from "../assets/drug/3.svg";
 import d4 from "../assets/drug/4.svg";
+import d5 from "../assets/drug/5.svg";
 
 function DrugInteractions() {
   const sections = [
     {
-      title: "Сильные или умеренные ингибиторы CYP3A4",
+      title: "Сильные или умеренные ингибиторы CYP3A4<sup>7</sup>",
       icon: d1,
       items: [
         {
@@ -27,7 +28,7 @@ function DrugInteractions() {
       ],
     },
     {
-      title: "Сильные индукторы CYP3A4",
+      title: "Сильные индукторы CYP3A4<sup>7</sup>",
       icon: d2,
       items: [
         {
@@ -48,7 +49,7 @@ function DrugInteractions() {
       ],
     },
     {
-      title: "Влияние ТИБСОВО® на другие лекарственные препараты",
+      title: "Влияние ТИБСОВО® на другие лекарственные препараты<sup>7</sup>",
       icon: d4,
       items: [
         {
@@ -77,6 +78,27 @@ function DrugInteractions() {
         },
       ],
     },
+      {
+          title: "Взаимодействие с транспортерами<sup>7</sup>",
+          icon: d5,
+          items: [
+              {
+                  text: "Ивосидениб ингибирует P-gp и может индуцировать P-gp. Таким образом, он способен изменять системную экспозицию действующих веществ, транспортируемых преимущественно P-gp (например, дабигатран).",
+              },
+              {
+                  text: "Совместное применение дабигатрана противопоказано.",
+              },
+              {
+                  text: "Ивосидениб ингибирует OAT3, полипептид 1B1, транспортирующий органические анионы (OATP1B1), и полипептид 1B3, транспортирующий органические анионы (OATP1B3). Следовательно, он способен повысить системную экспозицию субстратов OAT3 или OATP1B1/1B3.",
+              },
+              {
+                  text: "Совместного применения субстратов ОАТ3 (например, бензилпенициллина, фуросемида) или чувствительных субстратов ОАТР1В1/1В3 (например, аторвастатина, правастатина, розувастатина) во время лечения препаратом Тибсово следует по возможности избегать. Необходимо соблюдать осторожность при проведении лечения в отсутствие подходящих альтернатив.",
+              },
+              {
+                  text: "Необходимо соблюдать осторожность при проведении лечения в отсутствие подходящих альтернатив.",
+              },
+          ],
+      },
   ];
 
   return (
@@ -137,17 +159,17 @@ function DrugInteractions() {
                     </div>
 
                     {/* Заголовок секции для мобильной версии (рядом с иконкой) */}
-                    <h3 className="md:hidden text-[#151518] text-[14px] font-semibold leading-[140%] flex-1 ml-3">
-                      {section.title}
-                    </h3>
+                    <h3
+                        className="md:hidden text-[#151518] text-[14px] font-semibold leading-[140%] flex-1 ml-3"
+                        dangerouslySetInnerHTML={{ __html: section.title }}
+                    />
                   </div>
 
                   {/* Контейнер со списком элементов с padding для мобильной версии */}
                   <div className="w-full flex flex-col items-stretch justify-start pt-5 pb-8 px-4 md:py-0 md:px-0 md:pt-4 flex-1 min-w-0 md:max-w-[79%]">
                     {/* Заголовок секции для десктопной версии */}
-                    <h3 className="hidden md:block text-[#151518] text-[24px] tracking-normal mb-5">
-                      {section.title}
-                    </h3>
+                    <h3 className="hidden md:block text-[#151518] text-[24px] tracking-normal mb-5"
+                        dangerouslySetInnerHTML={{ __html: section.title }} />
 
                     {/* Список элементов */}
                     <div className="w-full flex flex-col items-stretch justify-start gap-4 md:gap-0">
@@ -160,7 +182,7 @@ function DrugInteractions() {
                         >
                           {/* Буллет-точка */}
                           <div className="flex items-center justify-center flex-shrink-0 w-[17px] h-[17px] md:w-7 md:h-auto md:pl-1.5 md:pr-1.5 md:pt-2 md:pb-2">
-                            <div className="rounded-full flex-shrink-0 w-[17px] h-[17px] md:w-3 md:h-3 bg-[#87A9E2]" />
+                            <div className="rounded-full flex-shrink-0 w-[7px] h-[7px] md:w-3 md:h-3 bg-[#87A9E2]" />
                           </div>
 
                           {/* Текст элемента */}

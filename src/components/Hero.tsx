@@ -6,7 +6,7 @@ function Hero() {
   const stats = [
     {
       value: '63%',
-      description: 'снижение риска прогрессирования заболевания или смерти (HR, 0.37 [95% CI, 0.25-0.54]; P<0.0001)',
+      description: 'снижение риска прогрессирования заболевания или смерти (ОР, 0.37 [95% ДИ, 0.25-0.54]; P<0.0001)',
       fullWidth: true,
     },
     {
@@ -99,6 +99,12 @@ function Hero() {
                 </div>
               ))}
             </div>
+              <div className="relative py-4 md:py-5 flex flex-col justify-center items-start gap-2 md:gap-3">
+                  <div className="text-[#151518] text-[10px] md:text-xs font-normal leading-[140%]">
+                      ОР — отношение рисков, ДИ — доверительный интервал, <br />
+                      ВБП — выживаемость без прогрессирования
+                  </div>
+              </div>
           </div>
         </div>
       </section>
