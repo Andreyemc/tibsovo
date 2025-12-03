@@ -2,7 +2,7 @@ import Scheme from "./Scheme";
 import r1 from "../assets/roles/1.svg";
 import r3 from "../assets/roles/3.svg";
 import IconListItem from "./IconListItem";
-import effectImage from "../assets/effect.svg";
+import AnimatedEffectBackground from "./AnimatedEffectBackground";
 
 const MechanismOfAction = () => {
   const items = [
@@ -18,11 +18,9 @@ const MechanismOfAction = () => {
   return (
     <div className="w-full pt-8 pb-2 md:py-18 md:px-5 md:pb-14">
       <div
-        className="px-2 md:px-0 mx-auto w-full md:max-w-[1360px] rounded-[16px] md:rounded-[20px] pt-8 md:pt-16 pb-2 md:pb-4 relative overflow-hidden bg-[#E74C39] bg-[right_top] bg-auto bg-no-repeat"
-        style={{
-          backgroundImage: `url("${effectImage}")`,
-        }}
+        className="px-2 md:px-0 mx-auto w-full md:max-w-[1360px] rounded-[16px] md:rounded-[20px] pt-8 md:pt-16 pb-2 md:pb-4 relative overflow-hidden bg-[#E74C39]"
       >
+        <AnimatedEffectBackground className="right-0 top-0" />
         <div className="flex flex-col gap-8 md:gap-12 px-0 md:px-4">
           {/* Первый блок - Текст */}
           <div className="flex flex-col w-full px-4 md:px-8 pb-0 md:pb-8">

@@ -1,8 +1,8 @@
 import { useState } from "react";
 import GraphsMain from "./Graphs/Main";
-import effectImage from "../assets/effect.svg";
 import ClarIDHyModal from "./Clarl/ClarIDHyModal";
 import DemografiyaModal from "./DemografiyaModal";
+import AnimatedEffectBackground from "./AnimatedEffectBackground";
 
 const Efficiency = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -11,11 +11,10 @@ const Efficiency = () => {
   return (
     <div className="w-full max-w-full py-2 md:py-20 md:px-5 md:pb-24 bg-white">
       <div 
-        className="mx-auto w-full max-w-[1360px] rounded-[16px] md:rounded-[20px] pt-8 md:pt-16 pb-2 md:pb-4 relative overflow-hidden bg-[#61279E] bg-[right_top] bg-auto bg-no-repeat"
-        style={{
-          backgroundImage: `url("${effectImage}")`,
-        }}
+        className="mx-auto w-full max-w-[1360px] rounded-[16px] md:rounded-[20px] pt-8 md:pt-16 pb-2 md:pb-4 relative overflow-hidden bg-[#61279E]"
       >
+        <AnimatedEffectBackground className="right-0 top-0" />
+
         <div
           className="flex flex-col gap-3 md:gap-6 px-4 md:px-16 pb-12 md:pb-0"
         >
