@@ -52,9 +52,10 @@ function References() {
                 <li>
                   Popovici-Muller J, et al. ACS Med Chem Lett. 2018;9:300–5.
                 </li>
-                <li>Vogel A et al. Ann Oncol. 2023;34(2):127-140.</li>
+                <li>Vogel A, Bridgewater J, Edeline J, et al, on behalf of the ESMO Guidelines Committee Biliary tract cancer: <br />
+                 ESMO Clinical Practice Guideline for diagnosis, treatment and follow-up Ann Oncol. 2023;34(2):127-140.</li>
                 <li>
-                  NCCN guidelines for biliary tract cancers. Version 1.2023.
+                  Benson A.B. et al. Biliary Tract Cancers NCCN guidelines v2. 2025, https://www.nccn.org/professionals/physician_gls/pdf/btc.pdf
                 </li>
                 <li>Zhu AX et al. JAMA Oncol. 2021;7(11):1669-1677.</li>
                 <li>

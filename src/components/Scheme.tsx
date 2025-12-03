@@ -16,8 +16,7 @@ const Scheme = () => {
         <div className="flex flex-col">
           {/* Заголовок схемы */}
           <h3 className="text-[#61279E] text-sm md:text-2xl font-semibold leading-[120%] tracking-[-0.065px] md:tracking-[-0.48px]">
-            Селективное ингибирование с помощью ТИБСОВО
-            <span className="text-sm md:text-2xl">®</span>
+          Механизм действия ивосидениба (ТИБСОВО®)<sup>1,2</sup>
           </h3>
 
           {/* Схема: 4 блока сверху и 4 блока снизу */}

@@ -1,4 +1,4 @@
-import graphImage from "../../../assets/graphs/3.svg";
+import graphImage from "../../../assets/graphs/33.svg";
 import InfoIcon from "../../InfoIcon";
 
 const LongTimeGraphsImage = () => {

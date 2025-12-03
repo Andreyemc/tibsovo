@@ -9,18 +9,39 @@ interface WarningProps {
   onConfirm?: () => void;
 }
 
+const WARNING_STORAGE_KEY = 'warningConfirmed';
+
 function Warning({ imageUrl, imageAlt = "Предупреждение", isOpen: controlledIsOpen, onClose, onConfirm }: WarningProps) {
-  const [internalIsOpen, setInternalIsOpen] = useState(true);
+  const [internalIsOpen, setInternalIsOpen] = useState(false);
+  
+  // Check localStorage on mount
+  useEffect(() => {
+    if (controlledIsOpen !== undefined) {
+      // If controlled, use controlled state
+      return;
+    }
+    
+    const savedChoice = localStorage.getItem(WARNING_STORAGE_KEY);
+    // Show modal if no choice saved or if user previously chose "No"
+    // Don't show if user previously chose "Yes"
+    if (savedChoice !== 'yes') {
+      setInternalIsOpen(true);
+    }
+  }, [controlledIsOpen]);
   
   // Use controlled state if provided, otherwise use internal state
   const isOpen = controlledIsOpen !== undefined ? controlledIsOpen : internalIsOpen;
   const setIsOpen = onClose ? () => onClose() : setInternalIsOpen;
 
   const handleNo = () => {
+    // Save "no" to localStorage, but still show on next page load
+    localStorage.setItem(WARNING_STORAGE_KEY, 'no');
     setIsOpen(false);
   };
 
   const handleYes = () => {
+    // Save "yes" to localStorage, don't show again
+    localStorage.setItem(WARNING_STORAGE_KEY, 'yes');
     setIsOpen(false);
     if (onConfirm) {
       onConfirm();

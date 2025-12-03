@@ -1,4 +1,4 @@
-import graphImage from "../../../assets/graphs/2.svg";
+import graphImage from "../../../assets/graphs/22.svg";
 import InfoIcon from "../../InfoIcon";
 
 const NoProgressGraphsImage = () => {

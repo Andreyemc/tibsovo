@@ -123,7 +123,7 @@ function PrecautionsAndContraindications() {
             </div>
 
             {/* Список пунктов противопоказаний */}
-            <div className="mt-0 md:mt-10 md:mt-12 w-full flex flex-col items-stretch justify-start px-4 md:px-10">
+            <div className="mt-0 md:mt-10 md:mt-12 w-full flex flex-col items-stretch justify-start px-4 md:px-20">
               {contraindications.map((item, index) => (
                 <div key={index} className={index > 0 ? "mt-6 md:mt-12" : ""}>
                   <IconListItem
@@ -134,7 +134,7 @@ function PrecautionsAndContraindications() {
                     className="pr-4 md:pr-0"
                     textClassName="text-xs md:text-xl leading-[140%] md:leading-[28px]"
                     iconSize={32}
-                    showGradient={false}
+                  
                   />
                 </div>
               ))}

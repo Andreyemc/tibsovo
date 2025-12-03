@@ -48,8 +48,9 @@ function Hero() {
               ТИБСОВО<span className="text-[32px] md:text-4xl lg:text-[64px]">®</span>: индивидуальный подход для наилучшего результата
             </h1>
             
-            <p className="text-[#151518] text-sm md:text-xl font-normal leading-[140%] max-w-full md:max-w-[675px] md:pr-5">
-              ТИБСОВО<span className="text-sm md:text-xl">®</span> является единственным препаратом таргетной терапии, направленной на mIDH1, который включен в клинические рекомендации ESMO (I-A) и NCCN (категория 1) для пациентов с холангиокарциномой с мутацией в гене IDH1.
+            <p className="text-[#151518] text-sm md:text-xl font-normal leading-[140%] max-w-full md:max-w-[675px]">
+              Ивосидениб (ТИБСОВО®) является единственным препаратом таргетной терапии, направленной на мутацию IDH1, 
+              который включен в клинические рекомендации ESMO (I-A) и NCCN (категория 1) для пациентов с холангиокарциномой<sup>3,4</sup>.
             </p>
           </div>
 
