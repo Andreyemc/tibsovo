@@ -281,7 +281,7 @@ function Hero() {
       </div>
 
       {/* Content Container */}
-      <div className="relative z-10 mx-auto w-full max-w-[1360px] pl-4 pr-4 mt-[56px] pt-[24px] pb-10 md:pl-5 md:pr-5 md:pt-[100px] lg:pl-10 lg:pr-10 lg:pt-[71px] 2xl:px-0">
+      <div className="relative z-10 mx-auto w-full max-w-[1360px] pl-4 pr-4 mt-[56px] pt-[24px] pb-10 md:pl-5 md:pr-5 md:pt-[100px] lg:pl-4 lg:pr-4 lg:pt-[71px] 2xl:px-0">
         {/* Text Content */}
         <div className="flex flex-col items-start gap-1 md:gap-1">
           <h1 className="max-w-[55%] md:max-w-[66%] text-[#61279E] text-[32px] md:text-4xl lg:text-[64px] font-semibold leading-[110%] tracking-[-0.96px] md:tracking-[-2.56px]">
