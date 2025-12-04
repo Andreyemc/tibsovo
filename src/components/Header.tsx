@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import logo from '../assets/logo.svg'
+import logo from '../assets/logo22.svg'
 
 function Header() {
     const [isModalOpen, setIsModalOpen] = useState(false)
@@ -69,7 +69,7 @@ function Header() {
                     </div>
 
                     {/* Desktop Navigation */}
-                    <nav className="hidden md:flex items-center lg:gap-6 md:gap-2 min-w-[240px] max-w-full flex-wrap">
+                    <nav className="hidden md:flex items-center lg:gap-7 md:gap-2 min-w-[240px] max-w-full flex-wrap">
                         {navItems.map((item, index) => (
                             <a
                                 key={index}
