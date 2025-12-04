@@ -72,7 +72,7 @@ function IconListItem({
           <div
             className="absolute pointer-events-none"
             style={{
-              left: isMobile ? "-16px" : "calc((100vw - 1360px) / 2 * -1 - 40px)",
+              left: "calc(-100vw + 100%)",
               right: `calc(100% - ${adjustedIconSize}px)`,
               top: "50%",
               transform: "translateY(-50%)",
