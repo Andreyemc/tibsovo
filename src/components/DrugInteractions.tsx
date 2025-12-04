@@ -108,7 +108,7 @@ function DrugInteractions() {
         <div className="w-full">
           <div className="w-full max-w-[1243px] flex flex-col items-stretch justify-start pl-0">
             <h2 className="pb-6 text-[#151518] text-[20px] md:text-[32px] font-semibold leading-[120%] md:leading-[35px] tracking-[-0.4px] md:tracking-[-0.96px] max-w-[343px] md:max-w-none">
-              Взаимодействие с другими лекарственными <br className="hidden md:block" /> препаратами и другие виды взаимодействия
+              Взаимодействие с другими лекарственными <br className="hidden md:block" /> препаратами и другие виды взаимодействия<sup>7</sup>
             </h2>
           </div>
         </div>

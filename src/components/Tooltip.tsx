@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 interface TooltipProps {
   text: string;
@@ -7,6 +7,7 @@ interface TooltipProps {
 
 const Tooltip = ({ text, onClose }: TooltipProps) => {
   const tooltipRef = useRef<HTMLDivElement>(null);
+  const [position, setPosition] = useState({ top: 0, left: 0 });
 
   useEffect(() => {
     const handleEscape = (e: KeyboardEvent) => {
@@ -17,8 +18,52 @@ const Tooltip = ({ text, onClose }: TooltipProps) => {
 
     document.addEventListener('keydown', handleEscape);
     
+    // Вычисляем позицию относительно иконки
+    const updatePosition = () => {
+      if (tooltipRef.current) {
+        const parent = tooltipRef.current.parentElement;
+        if (parent) {
+          // Ищем SVG элемент внутри родителя (это и есть иконка)
+          const svg = parent.querySelector('svg');
+          const iconElement = svg || parent;
+          const iconRect = iconElement.getBoundingClientRect();
+          
+          // Получаем реальную ширину tooltip
+          const tooltipRect = tooltipRef.current.getBoundingClientRect();
+          // Используем реальную ширину или fallback на 448px (десктоп) или вычисляем из max-w
+          let tooltipWidth = tooltipRect.width;
+          if (!tooltipWidth || tooltipWidth === 0) {
+            // Если tooltip еще не отрендерился, используем приблизительную ширину
+            const isMobile = window.innerWidth < 768;
+            tooltipWidth = isMobile ? Math.min(448, window.innerWidth * 0.95) : 448;
+          }
+          
+          // Размещаем tooltip снизу слева от иконки
+          // Правый край tooltip совпадает с левым краем иконки
+          const left = iconRect.left - tooltipWidth; // вычитаем ширину tooltip
+          const top = iconRect.bottom + 8; // снизу с отступом 8px
+          
+          setPosition({ top, left });
+        }
+      }
+    };
+
+    // Используем requestAnimationFrame для обновления позиции после рендера
+    requestAnimationFrame(() => {
+      updatePosition();
+      // Повторный вызов для использования реальной ширины tooltip
+      requestAnimationFrame(() => {
+        updatePosition();
+      });
+    });
+    
+    window.addEventListener('resize', updatePosition);
+    window.addEventListener('scroll', updatePosition, true);
+    
     return () => {
       document.removeEventListener('keydown', handleEscape);
+      window.removeEventListener('resize', updatePosition);
+      window.removeEventListener('scroll', updatePosition, true);
     };
   }, [onClose]);
 
@@ -41,13 +86,14 @@ const Tooltip = ({ text, onClose }: TooltipProps) => {
   return (
     <div
       ref={tooltipRef}
-      className="absolute z-[200] w-[448px] min-w-[300px] max-w-[95%] md:max-w-[90%] md:w-[448px] bg-white rounded-xl p-3 md:p-4 shadow-[0_0_54px_0_rgba(21,21,24,0.06)]"
+      className="fixed z-[9999] w-[448px] min-w-[300px] max-w-[95%] md:max-w-[90%] md:w-[448px] bg-white rounded-xl p-3 md:p-4 shadow-[0_0_54px_0_rgba(21,21,24,0.06)]"
       style={{
-        top: 'calc(100% + 8px)',
-        left: '50%',
-        transform: 'translateX(-50%)',
+        top: `${position.top}px`,
+        left: `${position.left}px`,
+        right: 'auto',
         maxHeight: '344px',
         overflowY: 'auto',
+        pointerEvents: 'auto',
       }}
       onClick={(e) => e.stopPropagation()}
     >

@@ -17,7 +17,7 @@ function References() {
             {/* Заголовок с черным кружочком */}
             <div className="w-full flex items-center justify-start flex-wrap gap-6 md:gap-6">
               {/* Текст заголовка */}
-              <h2 className="flex-1 text-[24px] md:text-[40px] text-[#151518] md:text-[#0B0F3E] font-semibold tracking-[-0.48px] md:tracking-[-1.2px] leading-[120%] md:leading-[1.1]">
+              <h2 className="flex-1 text-[24px] md:text-[40px] text-[#151518] md:text-[#151518] font-semibold tracking-[-0.48px] md:tracking-[-1.2px] leading-[120%] md:leading-[1.1]">
                 Список литературы
               </h2>
 

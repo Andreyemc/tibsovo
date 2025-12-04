@@ -1,4 +1,4 @@
-import graphImage from "../../../assets/graphs/11.svg";
+import graphImage from "../../../assets/graphs/111.svg";
 import InfoIcon from "../../InfoIcon";
 
 const CommonGraphsImage = () => {

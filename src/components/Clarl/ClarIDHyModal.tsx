@@ -25,7 +25,7 @@ const ClarIDHyModal = ({ isOpen, onClose }: ClarIDHyModalProps) => {
     <>
       {/* Overlay and Modal Container */}
       <div
-        className="fixed inset-0 z-[100] flex items-start md:items-center justify-center p-0 md:p-5 overflow-y-auto"
+        className="fixed inset-0 z-[100] flex items-start md:items-center justify-center overflow-y-auto"
         onClick={onClose}
       >
         {/* Overlay */}
@@ -33,14 +33,47 @@ const ClarIDHyModal = ({ isOpen, onClose }: ClarIDHyModalProps) => {
 
         {/* Modal Content */}
         <div
-          className="relative w-full max-w-[1440px] bg-white rounded-lg md:rounded-none flex flex-col items-center gap-16 md:gap-16 pb-[257px] md:pb-[257px] px-4 md:px-5 md:px-20 pt-4 md:pt-0 z-10"
+          className="relative w-full h-full bg-white flex flex-col items-center gap-16 md:gap-16 pb-[257px] md:pb-[257px] px-4 md:px-5 md:px-20 pt-4 md:pt-0 z-10"
           onClick={(e) => e.stopPropagation()}
         >
+          {/* Close Button - абсолютно позиционирован справа сверху */}
+          <button
+            onClick={onClose}
+            className="absolute top-4 md:top-4 right-4 md:right-5 lg:right-20 flex items-center justify-center w-10 h-10 md:w-12 md:h-12 opacity-50 hover:opacity-100 transition-opacity flex-shrink-0 cursor-pointer z-20"
+            aria-label="Close modal"
+          >
+            <svg
+              width="40"
+              height="40"
+              viewBox="0 0 32 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              className="w-full h-full"
+            >
+              <g opacity="0.5">
+                <path
+                  d="M7.66602 7.66669L24.3327 24.3334"
+                  stroke="#151518"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+                <path
+                  d="M7.66602 24.3334L24.3327 7.66669"
+                  stroke="#151518"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </g>
+            </svg>
+          </button>
+
           {/* Header */}
-          <div className="w-full max-w-[1440px] h-auto md:h-[107px] flex flex-col md:flex-row items-start md:items-center justify-between gap-4 md:gap-0 p-4 md:p-0">
+          <div className="w-full max-w-[1360px] h-auto md:h-[107px] flex flex-col md:flex-row items-start md:items-center gap-4 md:gap-0 p-4 md:p-0">
             <div className="flex items-end gap-3 w-full md:w-auto">
               <h2 className="text-2xl md:text-[32px] font-semibold leading-[120%] md:leading-[110%] tracking-[-0.72px] md:tracking-[-0.96px] text-[#151518]">
-                Дизайн исследования ClarlDHy
+                Дизайн исследования ClarlDHy <sup>5,6</sup>
               </h2>
               {/* Info Icon */}
               <InfoIcon
@@ -51,39 +84,6 @@ const ClarIDHyModal = ({ isOpen, onClose }: ClarIDHyModalProps) => {
                 text="ХК, холангиокарцинома; ПО, продолжительность ответа; ФС, функциональный статус; ECOG, Восточная объединенная группа онкологов; IDH, изоцитратдегидрогеназа; ЧОО, частота объективного ответа; ОВ, общая выживаемость; ФД, фармакодинамика; ВБП, выживаемость без прогрессирования; ФК, фармакокинетика; р/сут, раз в сутки; КЖ, качество жизни; RECIST v1.1, Критерии оценки ответа при солидных опухолях, версия 1,1; ВДО, время до ответа на лечение. 1. Abou-Alfa GK, et al. Lancet Oncol. 2020;21(6):796–807"
               />
             </div>
-
-            {/* Close Button */}
-            <button
-              onClick={onClose}
-              className="flex items-center justify-center w-10 h-10 md:w-12 md:h-12 opacity-50 hover:opacity-100 transition-opacity flex-shrink-0 cursor-pointer"
-              aria-label="Close modal"
-            >
-              <svg
-                width="40"
-                height="40"
-                viewBox="0 0 32 32"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                className="w-full h-full"
-              >
-                <g opacity="0.5">
-                  <path
-                    d="M7.66602 7.66669L24.3327 24.3334"
-                    stroke="#151518"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                  <path
-                    d="M7.66602 24.3334L24.3327 7.66669"
-                    stroke="#151518"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </g>
-              </svg>
-            </button>
           </div>
 
           {/* Main Content */}

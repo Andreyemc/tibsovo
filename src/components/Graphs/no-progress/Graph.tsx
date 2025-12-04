@@ -1,4 +1,4 @@
-import graphImage from "../../../assets/graphs/22.svg";
+import graphImage from "../../../assets/graphs/222.svg";
 import InfoIcon from "../../InfoIcon";
 
 const NoProgressGraphsImage = () => {
@@ -21,9 +21,8 @@ const NoProgressGraphsImage = () => {
               />
             </div>
           </div>
-          <div className="text-[#151518] text-sm md:text-base font-normal leading-[140%] md:leading-[22px] md:mt-1 md:max-w-[48%]">
-            снижение риска прогрессирования заболевания или смерти<br /> (ОР, 0.37
-            [95% ДИ, 0.25-0.54]; P&lt;0.0001)
+          <div className="text-[#151518] text-sm md:text-base font-normal leading-[140%] md:leading-[22px] md:mt-1 md:max-w-[100%]">
+            снижение риска прогрессирования заболевания или смерти<br /> (ОР, 0.37 [95% ДИ, 0.25-0.54]; P&lt;0.0001)
           </div>
         </div>
       </div>

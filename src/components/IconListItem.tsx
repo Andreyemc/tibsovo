@@ -112,11 +112,11 @@ function IconListItem({
         <p
           className={`text-[#151518] text-xl font-normal leading-[28px] flex-1 min-w-0 relative z-10 ${isMobile ? 'whitespace-normal' : 'whitespace-pre-line'} break-words ${textClassName}`}
         >
-          {processedText}
+          <span dangerouslySetInnerHTML={{ __html: processedText }}/>
           {processedBoldText && (
             <>
               {" "}
-              <strong className="font-bold">{processedBoldText}</strong>
+              <strong className="font-bold" dangerouslySetInnerHTML={{ __html: processedBoldText }}/>
             </>
           )}
         </p>

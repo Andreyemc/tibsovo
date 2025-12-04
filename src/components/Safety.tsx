@@ -30,25 +30,23 @@ function Safety() {
         <div className="w-full flex flex-col items-stretch justify-start gap-3 md:gap-0">
           {/* Заголовок секции */}
           <h2 className="text-[#61279E] text-xs md:text-base font-semibold leading-[120%] tracking-[0.36px] md:tracking-[0.48px] uppercase">
-            Безопасность
+            Профиль безопасности
           </h2>
 
           {/* Блок с основным заголовком и подзаголовком */}
           <div className="mt-0 md:mt-4 w-full max-w-[1243px] flex flex-col items-stretch justify-start gap-4 md:gap-0">
             {/* Основной заголовок */}
             <h3 className="text-[#61279E] text-2xl md:text-[40px] font-semibold leading-[120%] md:leading-[44px] tracking-[-0.48px] md:tracking-[-1.2px]">
-              Терапия препаратом ТИБСОВО
-              <span className="text-2xl md:text-[40px]">®</span>{" "}
-              характеризуется удовлетворительной переносимостью.{" "}
-                <br />
-              Профиль безопасности ТИБСОВО
-              <span className="text-2xl md:text-[40px]">®</span> хорошо
-              изучен
+            Терапия препаратом ТИБСОВО® характеризуется удовлетворительной переносимостью. 
+            <br />
+            Профиль безопасности ТИБСОВО® хорошо изучен<sup>6,10</sup>
             </h3>
 
             {/* Подзаголовок */}
             <p className="text-[#151518] text-sm md:text-xl font-normal leading-[140%] md:leading-[28px] mt-0 md:mt-6 whitespace-normal md:whitespace-pre-line break-words">
-              Безопасность монотерапии ТИБСОВО® пациентов с местнораспространенной или метастатической холангиокарциномой с мутацией в гене IDH1 R132, ранее получавших лечение, как минимум, в рамках одной линии системной терапии:
+            Безопасность монотерапии ТИБСОВО® у пациентов с местнораспространенной или метастатической 
+            холангиокарциномой с мутацией в гене IDH1 R132, ранее получавших лечение, как минимум, в рамках 
+            одной линии системной терапии<sup>7</sup>:
             </p>
           </div>
         </div>

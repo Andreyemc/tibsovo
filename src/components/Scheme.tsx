@@ -26,7 +26,7 @@ const Scheme = () => {
               {/* Блок 1 - mIDH1 (фиолетовый) */}
               <div className="flex flex-col flex-1 gap-2 md:gap-3">
                 <p className="text-[#151518] scheme-block-text font-normal leading-[140%] md:leading-[22px]">
-                  Таргетное <span className="hidden md:inline"><br /></span> действие на mIDH1
+                  Специфическое <span className="hidden md:inline"><br /></span> связывание с мутантным IDH1
                 </p>
                 <div className="flex items-center justify-center">
                   <img src={m1} alt="mIDH1" className="w-[70px] h-[19px] md:w-[260px] md:h-[82px]" />
@@ -36,7 +36,7 @@ const Scheme = () => {
               {/* Блок 2 - 2-ГГ (фиолетовый) */}
               <div className="flex flex-col flex-1 gap-2 md:gap-3">
                 <p className="text-[#151518] scheme-block-text font-normal leading-[140%] md:leading-[22px]">
-                  Тибсово ингибирует mIDH1,
+                  Тибсово ингибирует мутантный фермент IDH1,
                   <span className="hidden md:inline"><br /></span> блокирует выработку 2ГГ
                 </p>
                 <div className="flex items-center justify-center">
@@ -114,7 +114,7 @@ const Scheme = () => {
                   <img src={m6} alt="2-ГГ" className="w-[70px] h-[19px] md:w-[260px] md:h-[82px]" />
                 </div>
                 <p className="text-[#151518] scheme-block-text font-normal leading-[140%] md:leading-[22px]">
-                  Патологическая конверсия <span className="hidden md:inline"><br /></span> α-КГ в 2-ГГ
+                  Патологическая конверсия <span className="hidden md:inline"><br /></span> α-КГ (альфа-кетоглутарат) в 2-ГГ
                 </p>
               </div>
 
@@ -124,8 +124,7 @@ const Scheme = () => {
                   <img src={m7} alt="2-ГГ" className="w-[70px] h-[19px] md:w-[260px] md:h-[82px]" />
                 </div>
                 <p className="text-[#151518] scheme-block-text font-normal leading-[140%] md:leading-[22px]">
-                  Накапливается онкометаболит, что приводит к эпигенетической
-                  дисрегуляции
+                  Накапливается онкометаболит, что приводит к нарушению эпигенетической регуляции
                 </p>
               </div>
 
