@@ -3,8 +3,11 @@ import d2 from "../assets/drug/2.svg";
 import d3 from "../assets/drug/3.svg";
 import d4 from "../assets/drug/4.svg";
 import d5 from "../assets/drug/5.svg";
+import IconListItem from "./IconListItem.tsx";
+import {RefObject, useRef} from "react";
 
 function DrugInteractions() {
+  const drugInteractionsRef = useRef<HTMLDivElement>(null);
   const sections = [
     {
       title: "Сильные или умеренные ингибиторы CYP3A4<sup>7</sup>",
@@ -102,7 +105,7 @@ function DrugInteractions() {
   ];
 
   return (
-    <section className="relative w-full flex flex-col items-stretch justify-start bg-white py-8 px-4 md:px-6 2xl:px-0 md:pt-0 md:pb-16 overflow-hidden">
+    <section ref={drugInteractionsRef} className="relative w-full flex flex-col items-stretch justify-start bg-white py-8 px-4 md:px-6 2xl:px-0 md:pt-0 md:pb-16 overflow-hidden">
       <div className="w-full max-w-[1360px] mx-auto flex flex-col items-stretch justify-start px-4 md:px-0">
         {/* Заголовок секции - отдельный блок */}
         <div className="w-full">
@@ -128,41 +131,16 @@ function DrugInteractions() {
                 >
                   {/* Контейнер иконки */}
                   <div className="relative flex items-center flex-shrink-0 w-full md:w-auto">
-                    {/* Градиентный фон для десктопной версии */}
-                    <div className="hidden md:block absolute pointer-events-none"
-                      style={{
-                        left: "calc((100vw - 1360px) / 2 * -1)",
-                        right: "calc(100% - 72px)",
-                        top: "0",
-                        height: "72px",
-                        background: "linear-gradient(to right, rgba(135, 169, 226, 0) 0%, rgba(135, 169, 226, 0.8) 100%)",
-                        borderTopRightRadius: "36px",
-                        borderBottomRightRadius: "36px",
-                      }}
-                    />
-                    
-                    {/* Круглый блок с иконкой */}
-                    <div
-                      className="relative w-12 h-12 md:w-[72px] md:h-[72px] rounded-full flex items-center justify-center flex-shrink-0 z-10"
-                      style={{
-                        backgroundColor: "#87A9E2",
-                        boxShadow: "0 0 20px 0 rgba(97, 39, 158, 0.08)",
-                      }}
-                    >
-                      {section.icon && (
-                        <img
-                          src={section.icon}
-                          alt=""
-                          className="w-7 h-7 md:w-10 md:h-10 object-contain"
-                        />
-                      )}
-                    </div>
-
-                    {/* Заголовок секции для мобильной версии (рядом с иконкой) */}
-                    <h3
-                        className="md:hidden text-[#151518] text-[14px] font-semibold leading-[140%] flex-1 ml-3"
-                        dangerouslySetInnerHTML={{ __html: section.title }}
-                    />
+                      <IconListItem
+                          icon={section.icon}
+                          iconSize={72}
+                          text={section.title}
+                          color="#87A9E2"
+                          showGradient={true}
+                          gradientOpacity={0.8}
+                          textClassName="md:hidden text-[#151518] text-[14px] font-semibold leading-[140%] flex-1 ml-0"
+                          parentRef={drugInteractionsRef as RefObject<HTMLElement>}
+                      />
                   </div>
 
                   {/* Контейнер со списком элементов с padding для мобильной версии */}

@@ -67,7 +67,7 @@ const ProductInstruct = () => {
               </div>
               <p className="text-[#151518] text-xs md:text-base font-normal leading-[140%] md:leading-[22px] px-2 md:px-4 md:py-3">
                 Пациенты должны отказаться от употребления грейпфрута и
-                грейпфрутового сока во время лечения.<sup>7</sup>
+                грейпфрутового сока во время лечения<sup>7</sup>.
               </p>
             </div>
           </div>

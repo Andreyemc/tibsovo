@@ -31,7 +31,7 @@ const Efficiency = () => {
                 <h3 className="w-full max-w-[949px] text-2xl md:text-[40px] font-semibold leading-[120%] md:leading-[110%] tracking-[-0.48px] md:tracking-[-1.2px] text-white">
                   Исследование ClarIDHy: международное двойное слепое
                   рандомизированное плацебо-контролируемое исследование III
-                  фазы<sup>5,6</sup>.
+                  фазы<sup>5,6</sup>
                 </h3>
                 <p className="w-full max-w-[949px] text-sm md:text-xl font-normal leading-[140%] text-white">
                     Цель исследования ClarIDHy: оценить эффективность и безопасность монотерапии ивосидениба

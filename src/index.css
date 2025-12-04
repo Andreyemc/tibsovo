@@ -42,3 +42,12 @@ sup {
   }
 }
 
+
+/* Hero content container padding for 1360-1400px range */
+@media (min-width: 1380px) {
+  .hero-content-container.relative.z-10.mx-auto {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+}
+
