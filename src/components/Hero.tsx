@@ -2,6 +2,13 @@ import heroImage from "../assets/hero.svg";
 import heroImageMob from "../assets/hero-mob.svg";
 
 function Hero() {
+  const scrollToEfficiency = () => {
+    const element = document.getElementById('efficiency');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
   const stats = [
     {
       value: "до 63%",
@@ -74,29 +81,32 @@ function Hero() {
             />
 
             {/* Info Icon */}
-            <div className="absolute right-5 top-4 cursor-pointer opacity-50">
-            <svg
-                    width="12"
-                    height="16"
-                    viewBox="0 0 12 16"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M6.00098 15V1"
-                      stroke="#636466"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M11.002 9.99902L6.001 15L1 9.99902"
-                      stroke="#636466"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
+            <div 
+              className="absolute right-5 top-4 cursor-pointer opacity-50 hover:opacity-100 transition-opacity"
+              onClick={scrollToEfficiency}
+            >
+              <svg
+                width="12"
+                height="16"
+                viewBox="0 0 12 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6.00098 15V1"
+                  stroke="#636466"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+                <path
+                  d="M11.002 9.99902L6.001 15L1 9.99902"
+                  stroke="#636466"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
             </div>
           </div>
 
@@ -116,7 +126,10 @@ function Hero() {
                   dangerouslySetInnerHTML={{ __html: stat.description }}
                 />
                 {/* Info Icon */}
-                <div className="absolute right-5 top-4 cursor-pointer opacity-50">
+                <div 
+                  className="absolute right-5 top-4 cursor-pointer opacity-50 hover:opacity-100 transition-opacity"
+                  onClick={scrollToEfficiency}
+                >
                   <svg
                     width="12"
                     height="16"
@@ -127,16 +140,16 @@ function Hero() {
                     <path
                       d="M6.00098 15V1"
                       stroke="#636466"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     />
                     <path
                       d="M11.002 9.99902L6.001 15L1 9.99902"
                       stroke="#636466"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     />
                   </svg>
                 </div>

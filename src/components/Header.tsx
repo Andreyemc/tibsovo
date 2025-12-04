@@ -19,12 +19,36 @@ function Header() {
         'Безопасность'
     ]
 
+    // Маппинг названий пунктов меню к id компонентов
+    const navItemToId: Record<string, string> = {
+        'Эффективность': 'efficiency',
+        'Способ применения': 'product-info',
+        'Механизм действия': 'mechanism-of-action',
+        'Безопасность': 'safety'
+    }
+
+    const scrollToSection = (itemName: string) => {
+        const sectionId = navItemToId[itemName]
+        if (sectionId) {
+            const element = document.getElementById(sectionId)
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth', block: 'start' })
+            }
+        }
+    }
+
     const toggleModal = () => {
         setIsModalOpen(!isModalOpen)
     }
 
     const closeModal = () => {
         setIsModalOpen(false)
+    }
+
+    const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, itemName: string) => {
+        e.preventDefault()
+        scrollToSection(itemName)
+        closeModal()
     }
 
     return (
@@ -50,7 +74,8 @@ function Header() {
                             <a
                                 key={index}
                                 href="#"
-                                className="text-[#151518] text-sm font-semibold leading-[1.4] hover:opacity-80 transition-opacity"
+                                onClick={(e) => handleNavClick(e, item)}
+                                className="text-[#151518] text-sm font-semibold leading-[1.4] hover:opacity-80 transition-opacity cursor-pointer"
                             >
                                 {item}
                             </a>
@@ -145,7 +170,7 @@ function Header() {
                         <a
                             key={index}
                             href="#"
-                            onClick={closeModal}
+                            onClick={(e) => handleNavClick(e, item)}
                             className="text-[#151518] text-base font-semibold leading-[140%] cursor-pointer hover:opacity-80 transition-opacity"
                         >
                             {item}

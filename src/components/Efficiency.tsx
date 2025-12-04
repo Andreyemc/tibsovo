@@ -9,7 +9,7 @@ const Efficiency = () => {
   const [isDemografiyaModalOpen, setIsDemografiyaModalOpen] = useState(false);
 
   return (
-    <div className="w-full max-w-full py-2 md:py-20 md:px-5 md:pb-24 bg-white">
+    <div id="efficiency" className="w-full max-w-full py-2 md:py-20 md:px-5 md:pb-24 bg-white">
       <div 
         className="mx-auto w-full max-w-[1360px] rounded-[16px] md:rounded-[20px] pt-8 md:pt-16 pb-2 md:pb-4 relative overflow-hidden bg-[#61279E]"
       >

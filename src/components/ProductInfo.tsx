@@ -5,7 +5,7 @@ import warnIcon from '../assets/icons/warn.svg'
 
 const ProductInfo = () => {
   return (
-    <div className="w-full px-0 md:px-4 bg-white relative">
+    <div id="product-info" className="w-full px-0 md:px-4 bg-white relative">
       <div className="mx-auto w-full max-w-[1360px]">
         <div className="flex flex-col relative">
           {/* Мобильная версия - абсолютное позиционирование */}

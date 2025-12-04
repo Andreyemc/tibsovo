@@ -16,7 +16,7 @@ const MechanismOfAction = () => {
     },
   ];
   return (
-    <div className="w-full pt-8 pb-2 md:py-18 md:px-5 md:pb-14">
+    <div id="mechanism-of-action" className="w-full pt-8 pb-2 md:py-18 md:px-5 md:pb-14">
       <div className="px-2 md:px-0 mx-auto w-full md:max-w-[1360px] rounded-[16px] md:rounded-[20px] pt-8 md:pt-16 pb-2 md:pb-4 relative overflow-hidden bg-[#E74C39]">
         <AnimatedEffectBackground className="right-0 top-0" />
         <div className="flex flex-col gap-8 md:gap-12 px-0 md:px-4">

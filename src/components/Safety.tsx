@@ -23,7 +23,7 @@ function Safety() {
   ];
 
   return (
-    <section className="relative w-full flex flex-col items-stretch justify-start bg-white py-10 px-4 md:px-6 2xl:px-0 md:py-12 md:pt-16 md:pb-8 overflow-hidden">
+    <section id="safety" className="relative w-full flex flex-col items-stretch justify-start bg-white py-10 px-4 md:px-6 2xl:px-0 md:py-12 md:pt-16 md:pb-8 overflow-hidden">
       {/* Главный контейнер */}
       <div className="w-full md:max-w-[1360px] mx-auto flex flex-col items-stretch justify-start gap-8 md:gap-0">
         {/* Внутренний контейнер с контентом */}
