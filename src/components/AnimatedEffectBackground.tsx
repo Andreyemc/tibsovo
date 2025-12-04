@@ -124,7 +124,7 @@ const AnimatedEffectBackground: React.FC<AnimatedEffectBackgroundProps> = ({ cla
         if (!center) return;
 
         // Получаем текущую позицию круга
-        const group = groups[wave.circleIndex];
+        // const group = groups[wave.circleIndex];
         const speed = 0.2 + wave.circleIndex * 0.08;
         const radius = 5 + wave.circleIndex * 2;
         const offsetX = Math.cos(elapsed * speed + wave.circleIndex * 2.1) * radius;
