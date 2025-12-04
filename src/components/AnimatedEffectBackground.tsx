@@ -158,8 +158,8 @@ const AnimatedEffectBackground: React.FC<AnimatedEffectBackgroundProps> = ({ cla
     <svg
       ref={svgRef}
       width="322"
-      height="261"
-      viewBox="0 0 322 261"
+      height="400"
+      viewBox="0 0 322 400"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       className={`absolute top-0 right-0 pointer-events-none ${className}`}
