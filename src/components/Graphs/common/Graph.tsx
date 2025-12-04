@@ -4,7 +4,7 @@ import InfoIcon from "../../InfoIcon";
 const CommonGraphsImage = () => {
   return (
     <div>
-      <div className="flex flex-col px-4 md:px-8 pb-4 md:py-[17px]">
+      <div className="flex flex-col px-4 md:px-0 pb-4">
         <div className="flex flex-col relative">
           <div className="flex items-start justify-end">
             {/* Info Icon - visible on mobile only, positioned to the right */}
@@ -20,7 +20,7 @@ const CommonGraphsImage = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col px-4 pt-8 md:px-8 md:pb-4 md:py-[30px]">
+      <div className="flex flex-col px-1 pt-8 md:px-2 md:pb-4">
         <img src={graphImage} alt="Graph" className="w-full h-auto" />
       </div>
     </div>

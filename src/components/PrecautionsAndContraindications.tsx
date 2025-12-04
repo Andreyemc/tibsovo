@@ -61,13 +61,13 @@ function PrecautionsAndContraindications() {
       <div
         className="mx-auto w-full md:max-w-[1360px]"
       >
-        <div className="py-2 md:py-8 md:p-6 lg:px-16 lg:pt-16 md:pb-12 flex flex-col gap-8 md:gap-12">
+        <div className="py-2 md:py-8 md:p-6 lg:px-11 lg:pt-10 md:pb-12 flex flex-col gap-8 md:gap-12">
           {/* БЛОК 1: ГЛАВНЫЙ ЗАГОЛОВОК */}
           <div
-            className="w-full flex flex-col items-stretch justify-start md:pb-4"
+            className="w-full flex flex-col items-stretch justify-start md:pb-3"
           >
             <h2
-              className="w-full text-left text-xl md:text-[32px] font-semibold tracking-[-0.4px] md:tracking-[-0.96px] leading-[120%] md:leading-[35px] text-[#151518]"
+              className="w-full text-left text-xl md:text-[32px] font-semibold tracking-[-0.4px] md:tracking-[-0.96px] leading-[120%] md:leading-[100%] text-[#151518]"
             >
               Перед началом приема препарата ТИБСОВО® требуется{" "}
               <span className="hidden md:inline">
@@ -78,7 +78,7 @@ function PrecautionsAndContraindications() {
           </div>
 
           {/* БЛОК 2: МЕРЫ ПРЕДОСТОРОЖНОСТИ */}
-          <div className="w-full flex flex-col items-stretch justify-start gap-6 md:gap-0 md:pb-4">
+          <div className="w-full flex flex-col items-stretch justify-start gap-6 md:gap-0 md:pb-5">
             {/* Заголовок раздела */}
             <div
               className="w-full flex items-center justify-start"
@@ -91,7 +91,7 @@ function PrecautionsAndContraindications() {
             </div>
 
             {/* Список пунктов мер предосторожности */}
-            <div className="mt-0 md:mt-10 md:mt-12 px-4 md:px-10 w-full flex flex-col items-stretch justify-start md:max-w-[84%]">
+            <div className="mt-0 md:mt-10 md:mt-12 px-4 md:px-10 w-full flex flex-col items-stretch justify-start md:max-w-[82%]">
               {precautions.map((item, index) => (
                 <div key={index} className={index > 0 ? "mt-6 md:mt-12" : ""}>
                   <IconListItem
@@ -123,16 +123,16 @@ function PrecautionsAndContraindications() {
             </div>
 
             {/* Список пунктов противопоказаний */}
-            <div className="mt-0 md:mt-10 md:mt-12 w-full flex flex-col items-stretch justify-start px-4 md:px-20">
+            <div className="mt-0 md:mt-10 w-full flex flex-col items-stretch justify-start px-4 md:px-20">
               {contraindications.map((item, index) => (
-                <div key={index} className={index > 0 ? "mt-6 md:mt-12" : ""}>
+                <div key={index} className={index > 0 ? "mt-6 md:mt-6" : ""}>
                   <IconListItem
                     icon={item.icon}
                     text={item.text}
                     color="#E74C39"
                     gradientOpacity={0.8}
                     className="pr-4 md:pr-0"
-                    textClassName="text-xs md:text-xl leading-[140%] md:leading-[28px]"
+                    textClassName="text-xs md:text-xl leading-[140%] md:leading-[26px]"
                     iconSize={32}
                   
                   />

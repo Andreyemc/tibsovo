@@ -9,7 +9,7 @@ function References() {
   };
 
   return (
-    <section className="w-full flex flex-col items-stretch justify-start bg-white py-6 md:py-12 md:pt-6 md:pb-24">
+    <section className="w-full flex flex-col items-stretch justify-start bg-white py-6 md:pt-6 md:pb-20">
       <div className="w-full max-w-[1360px] mx-auto flex flex-col items-stretch justify-start px-4 md:px-0">
         {/* Основной контейнер с фоном */}
         <div className="w-full flex flex-col items-stretch justify-start">

@@ -4,7 +4,7 @@ import InfoIcon from "../../InfoIcon";
 const NoProgressGraphsImage = () => {
   return (
     <div>
-      <div className="flex flex-col px-4 md:px-8 pb-4 md:py-[17px]">
+      <div className="flex flex-col px-4 md:px-0 pb-4">
         <div className="flex flex-col relative">
           <div className="flex items-start justify-between">
             <div className="text-[#61279E] text-[48px] md:text-[80px] font-semibold leading-[120%] md:leading-[110%] tracking-[-1.92px] md:tracking-[-4px]">
@@ -27,7 +27,7 @@ const NoProgressGraphsImage = () => {
         </div>
       </div>
       {/* Graph Image */}
-      <div className="flex flex-col px-4 pt-8 md:px-8 md:pb-4 md:py-[30px]">
+      <div className="flex flex-col px-1 pt-8 md:px-1 md:pb-4">
         <img src={graphImage} alt="Graph" className="w-full h-auto" />
       </div>
     </div>

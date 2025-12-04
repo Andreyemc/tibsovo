@@ -4,7 +4,7 @@ import InfoIcon from "../../InfoIcon";
 const LongTimeGraphsImage = () => {
   return (
     <div>
-      <div className="flex flex-col px-4 md:px-8 pb-4 md:py-[17px]">
+      <div className="flex flex-col px-4 md:px-0 pb-4">
         <div className="flex flex-row relative gap-4 items-center">
           <div className="flex items-start justify-between">
             <div className="text-[#e74c39] text-[72px] md:text-[104px] font-semibold leading-[120%] md:leading-[110%] tracking-[-1.92px] md:tracking-[-4px]">
@@ -27,7 +27,7 @@ const LongTimeGraphsImage = () => {
         </div>
       </div>
       {/* Graph Image */}
-      <div className="flex flex-col px-4 pt-8 md:px-8 md:pb-4 md:py-[30px]">
+      <div className="flex flex-col px-1 pt-8 md:px-2 md:pb-4">
         <img src={graphImage} alt="Graph" className="w-full h-auto" />
       </div>
     </div>

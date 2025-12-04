@@ -15,7 +15,7 @@ const Scheme = () => {
       <div className="bg-[rgba(97,39,158,0.15)] px-4 py-4 md:px-5 md:py-12 lg:px-20 lg:py-[68px]">
         <div className="flex flex-col">
           {/* Заголовок схемы */}
-          <h3 className="text-[#61279E] text-sm md:text-2xl font-semibold leading-[120%] tracking-[-0.065px] md:tracking-[-0.48px]">
+          <h3 className="text-[#61279E] text-sm md:text-[28px] font-semibold leading-[120%] tracking-[-0.065px] md:tracking-[-0.98px]">
           Механизм действия ивосидениба (ТИБСОВО®)<sup>1,2</sup>
           </h3>
 
@@ -26,7 +26,7 @@ const Scheme = () => {
               {/* Блок 1 - mIDH1 (фиолетовый) */}
               <div className="flex flex-col flex-1 gap-2 md:gap-3">
                 <p className="text-[#151518] scheme-block-text font-normal leading-[140%] md:leading-[22px]">
-                  Специфическое <span className="hidden md:inline"><br /></span> связывание с мутантным IDH1
+                  Специфическое связывание <br/>с мутантным IDH1
                 </p>
                 <div className="flex items-center justify-center">
                   <img src={m1} alt="mIDH1" className="w-[70px] h-[19px] md:w-[260px] md:h-[82px]" />
@@ -36,8 +36,7 @@ const Scheme = () => {
               {/* Блок 2 - 2-ГГ (фиолетовый) */}
               <div className="flex flex-col flex-1 gap-2 md:gap-3">
                 <p className="text-[#151518] scheme-block-text font-normal leading-[140%] md:leading-[22px]">
-                  Тибсово ингибирует мутантный фермент IDH1,
-                  <span className="hidden md:inline"><br /></span> блокирует выработку 2ГГ
+                    Тибсово ингибирует мутантный IDH1, блокирует выработку 2ГГ
                 </p>
                 <div className="flex items-center justify-center">
                   <img src={m2} alt="2-ГГ" className="w-[70px] h-[19px] md:w-[260px] md:h-[82px]" />
@@ -47,7 +46,7 @@ const Scheme = () => {
               {/* Блок 3 - α-КГ (фиолетовый) */}
               <div className="flex flex-col flex-1 gap-2 md:gap-3">
                 <p className="text-[#151518] scheme-block-text font-normal leading-[140%] md:leading-[22px]">
-                  Восстанавливаются механизмы <span className="hidden md:inline"><br /></span> клеточной дифференцировки
+                  Восстанавливаются механизмы <br/> клеточной дифференцировки
                 </p>
                 <div className="flex items-center justify-center">
                   <img src={m3} alt="КГ" className="w-[70px] h-[19px] md:w-[260px] md:h-[82px]" />
@@ -141,7 +140,7 @@ const Scheme = () => {
             </div>
 
             <div className="flex justify-start mt-2 md:mt-0">
-              <h4 className="text-[#87A9E2] text-sm md:text-2xl font-semibold leading-[120%] tracking-[-0.065px] md:tracking-[-0.48px]">
+              <h4 className="text-[#87A9E2] text-sm md:text-[28px] font-semibold leading-[120%] tracking-[-0.065px] md:tracking-[-0.48px]">
                 Паталогическое состояние
               </h4>
             </div>

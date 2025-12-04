@@ -102,7 +102,7 @@ function DrugInteractions() {
   ];
 
   return (
-    <section className="relative w-full flex flex-col items-stretch justify-start bg-white py-8 px-4 md:px-6 2xl:px-0 md:pt-8 md:pb-8 overflow-hidden">
+    <section className="relative w-full flex flex-col items-stretch justify-start bg-white py-8 px-4 md:px-6 2xl:px-0 md:pt-0 md:pb-16 overflow-hidden">
       <div className="w-full max-w-[1360px] mx-auto flex flex-col items-stretch justify-start px-4 md:px-0">
         {/* Заголовок секции - отдельный блок */}
         <div className="w-full">
@@ -118,7 +118,7 @@ function DrugInteractions() {
           {/* Внутренний контейнер с контентом */}
           <div className="w-full flex flex-col items-start justify-start text-[32px] text-[#151518] font-semibold tracking-[-0.96px] leading-[35px] pl-0">
             {/* Блок со списком секций */}
-            <div className="w-full flex flex-col items-stretch justify-start md:p-16">
+            <div className="w-full flex flex-col items-stretch justify-start md:px-16 md:py-9">
               {sections.map((section, sectionIndex) => (
                 <div
                   key={sectionIndex}

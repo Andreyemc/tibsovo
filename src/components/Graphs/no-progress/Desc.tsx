@@ -2,8 +2,8 @@ const NoProgressDescGraph = () => {
   return (
     <div className="w-full lg:w-[436px] flex-shrink-0 px-2 md:px-1 pt-12 md:pt-4 py-4 md:pr-4 max-w-full">
       <div className="rounded-xl bg-white shadow-[0_0_20px_0_rgba(97,39,158,0.12)] px-5 py-5 md:px-8 md:pt-7 md:pb-7 flex flex-col gap-5 md:gap-6 h-full">
-        <h3 className="text-[#151518] text-2xl md:text-[32px] font-semibold leading-[120%] md:leading-[35px] tracking-[-0.48px] md:tracking-[-0.96px]">
-          ТИБСОВО<span className="text-2xl md:text-[32px]">®</span> способствует улучшению медианы
+        <h3 className="text-[#151518] text-2xl md:text-[29px] font-semibold leading-[110%] tracking-[-0.48px] md:tracking-[-0.96px]">
+          ТИБСОВО® способствует улучшению медианы
             ВБП приблизительно в 2 раза по сравнению
             с плацебо<sup>5,6</sup>
 

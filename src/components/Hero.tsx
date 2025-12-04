@@ -53,7 +53,7 @@ function Hero() {
             ТИБСОВО
             <span className="text-[32px] md:text-4xl lg:text-[64px]">®</span>
           </h1>
-          <p className="text-[#61279E] text-[24px] md:text-[40px] font-semibold leading-[110%] max-w-full md:max-w-[63%] tracking-[-0.96px] pb-4">
+          <p className="text-[#61279E] text-[24px] md:text-[40px] font-semibold leading-[110%] max-w-[63%] tracking-[-0.96px] pb-4">
             Ивосидениб: мощный ингибитор мутантного фермента
             изоцитратдегидрогеназы первого типа (IDH1)
           </p>
