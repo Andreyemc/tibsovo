@@ -2,10 +2,12 @@ import tibsovoImage from '../assets/product-tbs.png'
 import ProductInstruct from './ProductInstruct'
 import IconListItem from './IconListItem'
 import warnIcon from '../assets/icons/warn.svg'
+import { RefObject, useRef } from 'react'
 
 const ProductInfo = () => {
+  const productInfoRef = useRef<HTMLDivElement>(null);
   return (
-    <div id="product-info" className="w-full px-0 md:px-4 bg-white relative">
+    <div id="product-info" className="w-full px-0 md:px-4 bg-white relative" ref={productInfoRef}>
       <div className="mx-auto w-full max-w-[1360px]">
         <div className="flex flex-col relative">
           {/* Мобильная версия - абсолютное позиционирование */}
@@ -36,7 +38,7 @@ const ProductInfo = () => {
               </div>
               
               {/* Кнопка */}
-              <button className="mt-8 md:mt-12 self-stretch md:self-start px-8 py-4 rounded-lg border border-[#151518] text-[#151518] text-sm md:text-base font-semibold leading-[100%] hover:opacity-90 transition-opacity cursor-pointer">
+              <button className="mt-8 md:mt-12 self-stretch md:self-start px-8 py-4 rounded-lg border border-[#151518] text-[#151518] text-sm md:text-base font-semibold leading-[140%] hover:opacity-90 transition-opacity cursor-pointer">
               Скачать брошюру: режим дозирования
               </button>
             </div>
@@ -68,6 +70,7 @@ const ProductInfo = () => {
               showGradient={true}
               gradientOpacity={0.8}
               textClassName="text-xs md:text-base font-semibold md:font-normal leading-[140%] md:leading-[22px]"
+              parentRef={productInfoRef as RefObject<HTMLElement>}
             />
           </div>
         </div>

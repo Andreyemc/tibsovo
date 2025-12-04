@@ -7,7 +7,7 @@ const NoProgressGraphsImage = () => {
       <div className="flex flex-col px-4 md:px-0 pb-4">
         <div className="flex flex-col relative">
           <div className="flex items-start justify-between">
-            <div className="text-[#61279E] text-[48px] md:text-[80px] font-semibold leading-[120%] md:leading-[110%] tracking-[-1.92px] md:tracking-[-4px]">
+            <div className="text-[#61279E] text-[48px] md:text-[80px] font-medium leading-[120%] md:leading-[110%] tracking-[-1.92px] md:tracking-[-4px]">
               63%
             </div>
             {/* Info Icon - visible on mobile only, positioned to the right */}

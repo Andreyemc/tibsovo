@@ -1,3 +1,4 @@
+import { RefObject, useRef } from "react";
 import icon1 from "../assets/seventh/icons/1.svg";
 import icon2 from "../assets/seventh/icons/2.svg";
 import icon3 from "../assets/seventh/icons/3.svg";
@@ -6,6 +7,7 @@ import rectangle13Icon from "../assets/seventh/icons/Rectangle 13.svg";
 import IconListItem from "./IconListItem";
 
 function PrecautionsAndContraindications() {
+  const precautionsAndContraindicationsRef = useRef<HTMLDivElement>(null);
   const precautions = [
     {
       text: "Перед началом лечения необходимо провести электрокардиографическое исследование (ЭКГ). ",
@@ -56,6 +58,7 @@ function PrecautionsAndContraindications() {
     >
       {/* Основной контентный блок */}
       <div
+        ref={precautionsAndContraindicationsRef}
         className="mx-auto w-full px-4 py-8 md:max-w-[1360px] bg-[rgba(224,219,244,0.4)] rounded-[16px] md:rounded-[20px] overflow-hidden"
       >
       <div
@@ -69,12 +72,12 @@ function PrecautionsAndContraindications() {
             <h2
               className="w-full text-left text-xl md:text-[32px] font-semibold tracking-[-0.4px] md:tracking-[-0.96px] leading-[120%] md:leading-[100%] text-[#151518]"
             >
-              Перед началом приема препарата ТИБСОВО® требуется{" "}
+              Перед началом приема препарата ТИБСОВО® требуется{" "}  
               <span className="hidden md:inline">
-                <br /> подтвердить наличие у пациентов мутации в гене IDH1 R132 <br /> с использованием подходящего диагностического теста<sub>7</sub>
+                <br /> подтвердить наличие у пациентов мутации в гене IDH1 R132 <br /> с использованием подходящего диагностического теста<sup>7</sup>
               </span>
-              <span className="md:hidden">подтвердить наличие у пациентов мутации в гене IDH1 R132 с использованием подходящего диагностического теста<sub>7</sub></span>
-            </h2>
+              <span className="md:hidden">подтвердить наличие у пациентов мутации в гене IDH1 R132 с использованием подходящего диагностического теста<sup>7</sup></span>
+            </h2> 
           </div>
 
           {/* БЛОК 2: МЕРЫ ПРЕДОСТОРОЖНОСТИ */}
@@ -86,7 +89,7 @@ function PrecautionsAndContraindications() {
               <h3
                 className="flex-1 text-left text-base md:text-2xl font-semibold tracking-[-0.48px] leading-[140%] md:leading-[1.2] text-[#151518]"
               >
-                Меры предосторожности перед применением<sub>7</sub>:
+                Меры предосторожности перед применением<sup>7</sup>:
               </h3>
             </div>
 
@@ -99,10 +102,11 @@ function PrecautionsAndContraindications() {
                     text={item.text}
                     boldText={item.boldText}
                     color="#6A19A4"
-                    gradientOpacity={1}
+                    gradientOpacity={0.5}
                     className="pr-4 md:pr-0"
                     textClassName="text-xs md:text-xl leading-[140%] md:leading-[28px]"
                     iconSize={72}
+                    parentRef={precautionsAndContraindicationsRef as RefObject<HTMLElement>}
                   />
                 </div>
               ))}
@@ -130,11 +134,11 @@ function PrecautionsAndContraindications() {
                     icon={item.icon}
                     text={item.text}
                     color="#E74C39"
-                    gradientOpacity={0.8}
+                    gradientOpacity={0.5}
                     className="pr-4 md:pr-0"
                     textClassName="text-xs md:text-xl leading-[140%] md:leading-[26px]"
                     iconSize={32}
-                  
+                    parentRef={precautionsAndContraindicationsRef as RefObject<HTMLElement>}
                   />
                 </div>
               ))}

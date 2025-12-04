@@ -38,9 +38,9 @@ const Tooltip = ({ text, onClose }: TooltipProps) => {
             tooltipWidth = isMobile ? Math.min(448, window.innerWidth * 0.95) : 448;
           }
           
-          // Размещаем tooltip снизу слева от иконки
-          // Правый край tooltip совпадает с левым краем иконки
-          const left = iconRect.left - tooltipWidth; // вычитаем ширину tooltip
+          // Размещаем tooltip снизу, выровненный по центру иконки
+          // Центр tooltip совпадает с центром иконки
+          const left = iconRect.left + iconRect.width / 2;
           const top = iconRect.bottom + 8; // снизу с отступом 8px
           
           setPosition({ top, left });
@@ -91,6 +91,7 @@ const Tooltip = ({ text, onClose }: TooltipProps) => {
         top: `${position.top}px`,
         left: `${position.left}px`,
         right: 'auto',
+        transform: 'translateX(-50%)',
         maxHeight: '344px',
         overflowY: 'auto',
         pointerEvents: 'auto',

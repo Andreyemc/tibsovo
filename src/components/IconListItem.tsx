@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef, RefObject } from 'react'
 
 interface IconListItemProps {
   icon: string;
@@ -11,6 +11,7 @@ interface IconListItemProps {
   gradientOpacity?: number; // Опциональная прозрачность градиента (0-1)
   boxShadow?: string; // Опциональная кастомная тень
   iconSize?: number; // Размер иконки (ширина и высота) в пикселях
+  parentRef?: RefObject<HTMLElement>; // Опциональный ref родителя, до границ которого нужно растянуть градиент
 }
 
 function IconListItem({
@@ -24,8 +25,15 @@ function IconListItem({
   gradientOpacity = 0.8,
   boxShadow = "0 0 20px 0 rgba(97, 39, 158, 0.08)",
   iconSize = 72,
+  parentRef: externalParentRef,
 }: IconListItemProps) {
   const [isMobile, setIsMobile] = useState(false)
+  const [gradientLeft, setGradientLeft] = useState(0)
+  const internalParentRef = useRef<HTMLDivElement>(null)
+  const innerRef = useRef<HTMLDivElement>(null)
+  
+  // Используем переданный ref или внутренний
+  const parentRef = externalParentRef || internalParentRef
 
   useEffect(() => {
     const checkMobile = () => {
@@ -37,6 +45,27 @@ function IconListItem({
     
     return () => window.removeEventListener('resize', checkMobile)
   }, [])
+
+  useEffect(() => {
+    const updateGradientPosition = () => {
+      if (parentRef?.current && innerRef.current) {
+        const parentRect = parentRef.current.getBoundingClientRect()
+        const innerRect = innerRef.current.getBoundingClientRect()
+        // Вычисляем расстояние от левой границы родителя до левой границы внутреннего контейнера
+        const leftOffset = innerRect.left - parentRect.left
+        setGradientLeft(-leftOffset)
+      }
+    }
+
+    updateGradientPosition()
+    window.addEventListener('resize', updateGradientPosition)
+    window.addEventListener('scroll', updateGradientPosition, true)
+    
+    return () => {
+      window.removeEventListener('resize', updateGradientPosition)
+      window.removeEventListener('scroll', updateGradientPosition, true)
+    }
+  }, [parentRef])
 
   // Применяем деление на 1.5 для мобильных устройств
   const adjustedIconSize = isMobile ? iconSize / 1.5 : iconSize
@@ -61,10 +90,12 @@ function IconListItem({
 
   return (
     <div
+      ref={externalParentRef ? undefined : internalParentRef}
       className={`relative w-full flex items-center gap-3 md:gap-6 justify-start overflow-visible ${className}`}
     >
       {/* Единый блок: прямоугольник с кругом и текст */}
       <div
+        ref={innerRef}
         className="relative flex items-center flex-1 min-w-0 gap-3 md:gap-6"
       >
         {/* Прямоугольник, растянутый влево с градиентом прозрачности */}
@@ -72,14 +103,14 @@ function IconListItem({
           <div
             className="absolute pointer-events-none"
             style={{
-              left: "calc(-100vw + 100%)",
+              left: `${gradientLeft}px`,
               right: `calc(100% - ${adjustedIconSize}px)`,
               top: "50%",
               transform: "translateY(-50%)",
               height: `${adjustedIconSize}px`,
               background: `linear-gradient(to right, ${getRgbaColor(
                 color,
-                0
+                0.1
               )} 0%, ${getRgbaColor(color, gradientOpacity)} 100%)`,
               borderTopRightRadius: `${adjustedIconSize / 2}px`,
               borderBottomRightRadius: `${adjustedIconSize / 2}px`,

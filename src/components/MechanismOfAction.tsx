@@ -3,8 +3,10 @@ import r1 from "../assets/roles/1.svg";
 import r3 from "../assets/roles/3.svg";
 import IconListItem from "./IconListItem";
 import AnimatedEffectBackground from "./AnimatedEffectBackground";
+import { useRef } from "react";
 
 const MechanismOfAction = () => {
+  const mechanismOfActionRef = useRef<HTMLDivElement>(null);
   const items = [
     {
       icon: r1,
@@ -16,7 +18,7 @@ const MechanismOfAction = () => {
     },
   ];
   return (
-    <div id="mechanism-of-action" className="w-full pt-8 pb-2 md:py-18 md:px-5 md:pb-14">
+    <div id="mechanism-of-action" className="w-full pt-8 pb-2 md:py-18 md:px-5 md:pb-14" ref={mechanismOfActionRef}>
       <div className="px-2 md:px-0 mx-auto w-full md:max-w-[1360px] rounded-[16px] md:rounded-[20px] pt-8 md:pt-16 pb-2 md:pb-4 relative overflow-hidden bg-[#E74C39]">
         <AnimatedEffectBackground className="right-0 top-0" />
         <div className="flex flex-col gap-8 md:gap-12 px-0 md:px-4">
@@ -59,6 +61,7 @@ const MechanismOfAction = () => {
                   textClassName="text-white text-xs md:text-xl leading-[140%] md:leading-[28px]"
                   boxShadow="0 0 20px 0 rgba(231, 76, 57, 0.08)"
                   iconSize={72}
+                  parentRef={mechanismOfActionRef as RefObject<HTMLElement>}
                 />
               ))}
             </div>
