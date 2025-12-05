@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import InfoIcon from "../InfoIcon";
+import arrowSvg from "../../assets/arrow.svg";
 
 interface ClarIDHyModalProps {
   isOpen: boolean;
@@ -120,6 +121,7 @@ const ClarIDHyModal = ({ isOpen, onClose }: ClarIDHyModalProps) => {
 
             {/* Randomization Info */}
             <div className="w-full md:w-[168px] flex flex-col items-start gap-4 md:mt-[123px]">
+              <img src={arrowSvg} alt="Arrow" className="w-full" />
               <p className="text-sm md:text-base font-normal leading-[140%] text-[#151518]">
                 Рандомизация (2:1)
               </p>
@@ -135,7 +137,7 @@ const ClarIDHyModal = ({ isOpen, onClose }: ClarIDHyModalProps) => {
             <div className="w-full md:w-[260px] flex flex-col items-start gap-2">
               {/* Ивосидениб Box */}
               <div className="w-full flex flex-col items-start">
-                <div className="w-full flex flex-col items-start gap-6 p-5 md:p-6 rounded-[20px] bg-[#151518]">
+                <div className="w-full flex flex-col items-start gap-6 p-5 md:p-6 rounded-[20px] bg-[#636466]">
                   <h4 className="w-full text-lg md:text-xl font-semibold leading-[120%] tracking-[-0.4px] text-white">
                     Ивосидениб 500 мг 1 раз в сутки
                   </h4>
@@ -152,7 +154,7 @@ const ClarIDHyModal = ({ isOpen, onClose }: ClarIDHyModalProps) => {
 
               {/* Плацебо Box */}
               <div className="w-full flex flex-col items-start">
-                <div className="w-full flex flex-col items-start gap-6 p-5 md:p-6 rounded-[20px] bg-[#151518]">
+                <div className="w-full flex flex-col items-start gap-6 p-5 md:p-6 rounded-[20px] bg-[#636466]">
                   <h4 className="w-full text-lg md:text-xl font-semibold leading-[120%] tracking-[-0.4px] text-white">
                     Плацебо 1 раз в сутки
                   </h4>
@@ -163,16 +165,23 @@ const ClarIDHyModal = ({ isOpen, onClose }: ClarIDHyModalProps) => {
                     <p className="text-sm md:text-base font-normal leading-[140%] text-white">
                       n= 61; получавшие лечение n=59
                     </p>
+                    <p className="text-sm md:text-base font-normal leading-[140%] text-white">
+                    n=124; получавшие лечение n=121
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
 
             {/* Treatment Description */}
-            <div className="w-full md:w-[168px] text-sm md:text-base font-normal leading-[140%] text-[#151518] md:mt-[123px]">
-              Лечение до прогрессирования заболевания, появления неприемлемой
-              токсичности или отмены препарата. Переход от плацебо на ивосидениб
-              был разрешен при рентгенологическом прогрессировании заболевания
+            <div className="w-full md:w-[168px] gap-4  text-sm md:text-base font-normal leading-[140%] text-[#151518] md:mt-[123px]">
+              <img src={arrowSvg} alt="Arrow" className="w-full pb-6" />
+              <p className="text-sm md:text-base font-normal leading-[140%] text-[#151518] pb-4">
+              Лечение до прогрессирования заболевания, появления неприемлемой токсичности или отмены препарата.
+              </p>
+              <p className="text-sm md:text-base font-normal leading-[140%] text-[#151518]">
+              Переход от плацебо на ивосидениб был разрешен при рентгенологическом прогрессировании заболевания
+              </p>
             </div>
 
             {/* Right Section - Endpoints */}
@@ -194,31 +203,25 @@ const ClarIDHyModal = ({ isOpen, onClose }: ClarIDHyModalProps) => {
                 </h3>
                 <div className="w-full flex flex-col items-start gap-4">
                   <p className="text-sm md:text-base font-normal leading-[140%] text-white">
-                    Безопасность/переносимость
+                  Общая выживаемость (ОВ):
                   </p>
                   <p className="text-sm md:text-base font-normal leading-[140%] text-white">
-                    ВБП (при оценке исследователем)
+                  Объективная частота ответа по RECIST
                   </p>
                   <p className="text-sm md:text-base font-normal leading-[140%] text-white">
-                    РВ
+                  Продолжительность ответа и время до ответа
                   </p>
                   <p className="text-sm md:text-base font-normal leading-[140%] text-white">
-                    ЧОО
+                  ВБП по оценке исследователя
                   </p>
                   <p className="text-sm md:text-base font-normal leading-[140%] text-white">
-                    ПО
+                  Фармакокинетика <br /> и фармакодинамика
                   </p>
                   <p className="text-sm md:text-base font-normal leading-[140%] text-white">
-                    ВДО
+                  Качество жизни (КЖ) по EOTC
                   </p>
                   <p className="text-sm md:text-base font-normal leading-[140%] text-white">
-                    КЖ
-                  </p>
-                  <p className="text-sm md:text-base font-normal leading-[140%] text-white">
-                    Показатели экономики здравоохранения
-                  </p>
-                  <p className="text-sm md:text-base font-normal leading-[140%] text-white">
-                    Фармакокинетика/фармакодинамика
+                  Безопасность
                   </p>
                 </div>
               </div>
