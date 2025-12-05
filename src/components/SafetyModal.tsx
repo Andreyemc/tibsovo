@@ -138,21 +138,21 @@ const SafetyModal = ({ isOpen, onClose }: SafetyModalProps) => {
                             {/* Table Rows */}
                             {/* Тошнота */}
                             <div className="flex items-center">
-                                <div className="w-[220px] md:w-[220px] p-4 bg-[rgba(224,219,244,0.40)] flex items-center">
+                                <div className="w-[220px] md:w-[220px] p-4 bg-white flex items-center">
                                     <div className="text-[#61279E] text-base md:text-base font-semibold leading-[140%] text-center">
                                         Тошнота
                                     </div>
                                 </div>
-                                <div className="flex-1 p-4 bg-white">
+                                <div className="flex-1 p-4 bg-[rgba(135,169,226,0.15)]">
                                     <div className="text-center text-[#151518] text-base md:text-base font-semibold leading-[140%]">41%</div>
                                 </div>
-                                <div className="flex-1 p-4 bg-white">
+                                <div className="flex-1 p-4 bg-[rgba(135,169,226,0.15)]">
                                     <div className="text-center text-[#151518] text-base md:text-base font-semibold leading-[140%]">3 (2%)</div>
                                 </div>
-                                <div className="flex-1 p-4 bg-white">
+                                <div className="flex-1 p-4 bg-[rgba(135,169,226,0.15)]">
                                     <div className="text-center text-[#151518] text-base md:text-base font-semibold leading-[140%]">29%</div>
                                 </div>
-                                <div className="flex-1 p-4 bg-white">
+                                <div className="flex-1 p-4 bg-[rgba(135,169,226,0.15)]">
                                     <div className="text-center text-[#151518] text-base md:text-base font-semibold leading-[140%]">1 (2%)</div>
                                 </div>
                             </div>
@@ -170,38 +170,38 @@ const SafetyModal = ({ isOpen, onClose }: SafetyModalProps) => {
                                 <div className="flex-1 p-4 bg-[rgba(97,39,158,0.55)]">
                                     <div className="text-center text-white text-base md:text-base font-semibold leading-[140%]">0</div>
                                 </div>
-                                <div className="flex-1 p-4 bg-[rgba(135,169,226,0.15)]">
+                                <div className="flex-1 p-4 bg-[rgba(135,169,226,0.55)]">
                                     <div className="text-center text-[#151518] text-base md:text-base font-semibold leading-[140%]">17%</div>
                                 </div>
-                                <div className="flex-1 p-4 bg-[rgba(135,169,226,0.15)]">
+                                <div className="flex-1 p-4 bg-[rgba(135,169,226,0.55)]">
                                     <div className="text-center text-[#151518] text-base md:text-base font-semibold leading-[140%]">0</div>
                                 </div>
                             </div>
 
                             {/* Утомляемость */}
                             <div className="flex items-center">
-                                <div className="w-[220px] md:w-[220px] p-4 bg-[rgba(224,219,244,0.40)] flex items-center">
+                                <div className="w-[220px] md:w-[220px] p-4 bg-white flex items-center">
                                     <div className="text-[#61279E] text-base md:text-base font-semibold leading-[140%] text-center">
                                         Утомляемость
                                     </div>
                                 </div>
-                                <div className="flex-1 p-4 bg-white">
+                                <div className="flex-1 p-4 bg-[rgba(135,169,226,0.15)]">
                                     <div className="text-center text-[#151518] text-base md:text-base font-semibold leading-[140%]">31%</div>
                                 </div>
-                                <div className="flex-1 p-4 bg-white">
+                                <div className="flex-1 p-4 bg-[rgba(135,169,226,0.15)]">
                                     <div className="text-center text-[#151518] text-base md:text-base font-semibold leading-[140%]">4 (3%)</div>
                                 </div>
-                                <div className="flex-1 p-4 bg-white">
+                                <div className="flex-1 p-4 bg-[rgba(135,169,226,0.15)]">
                                     <div className="text-center text-[#151518] text-base md:text-base font-semibold leading-[140%]">17%</div>
                                 </div>
-                                <div className="flex-1 p-4 bg-white">
+                                <div className="flex-1 p-4 bg-[rgba(135,169,226,0.15)]">
                                     <div className="text-center text-[#151518] text-base md:text-base font-semibold leading-[140%]">1 (2%)</div>
                                 </div>
                             </div>
 
                             {/* Кашель */}
                             <div className="flex items-center">
-                                <div className="w-[220px] md:w-[220px] p-4 bg-white flex items-center">
+                                <div className="w-[220px] md:w-[220px] p-4 bg-[rgba(224,219,244,0.40)] flex items-center">
                                     <div className="text-[#61279E] text-base md:text-base font-semibold leading-[140%] text-center">
                                         Кашель
                                     </div>
@@ -212,31 +212,31 @@ const SafetyModal = ({ isOpen, onClose }: SafetyModalProps) => {
                                 <div className="flex-1 p-4 bg-[rgba(97,39,158,0.55)]">
                                     <div className="text-center text-white text-base md:text-base font-semibold leading-[140%]">3 (2%)</div>
                                 </div>
-                                <div className="flex-1 p-4 bg-[rgba(135,169,226,0.15)]">
+                                <div className="flex-1 p-4 bg-[rgba(135,169,226,0.55)]">
                                     <div className="text-center text-[#151518] text-base md:text-base font-semibold leading-[140%]">18%</div>
                                 </div>
-                                <div className="flex-1 p-4 bg-[rgba(135,169,226,0.15)]">
+                                <div className="flex-1 p-4 bg-[rgba(135,169,226,0.55)]">
                                     <div className="text-center text-[#151518] text-base md:text-base font-semibold leading-[140%]">1 (2%)</div>
                                 </div>
                             </div>
 
                             {/* Боль в животе */}
                             <div className="flex items-center">
-                                <div className="w-[220px] md:w-[220px] p-4 bg-[rgba(224,219,244,0.40)] flex items-center">
+                                <div className="w-[220px] md:w-[220px] p-4 bg-white flex items-center">
                                     <div className="text-[#61279E] text-base md:text-base font-semibold leading-[140%] text-center">
                                         Боль в животе
                                     </div>
                                 </div>
-                                <div className="flex-1 p-4 bg-white">
+                                <div className="flex-1 p-4 bg-[rgba(135,169,226,0.15)]">
                                     <div className="text-center text-[#151518] text-base md:text-base font-semibold leading-[140%]">24%</div>
                                 </div>
-                                <div className="flex-1 p-4 bg-white">
+                                <div className="flex-1 p-4 bg-[rgba(135,169,226,0.15)]">
                                     <div className="text-center text-[#151518] text-base md:text-base font-semibold leading-[140%]">0</div>
                                 </div>
-                                <div className="flex-1 p-4 bg-white">
+                                <div className="flex-1 p-4 bg-[rgba(135,169,226,0.15)]">
                                     <div className="text-center text-[#151518] text-base md:text-base font-semibold leading-[140%]">15%</div>
                                 </div>
-                                <div className="flex-1 p-4 bg-white">
+                                <div className="flex-1 p-4 bg-[rgba(135,169,226,0.15)]">
                                     <div className="text-center text-[#151518] text-base md:text-base font-semibold leading-[140%]">0</div>
                                 </div>
                             </div>
@@ -254,38 +254,38 @@ const SafetyModal = ({ isOpen, onClose }: SafetyModalProps) => {
                                 <div className="flex-1 p-4 bg-[rgba(97,39,158,0.55)]">
                                     <div className="text-center text-white text-base md:text-base font-semibold leading-[140%]">2 (2%)</div>
                                 </div>
-                                <div className="flex-1 p-4 bg-[rgba(135,169,226,0.15)]">
+                                <div className="flex-1 p-4 bg-[rgba(135,169,226,0.55)]">
                                     <div className="text-center text-[#151518] text-base md:text-base font-semibold leading-[140%]">19%</div>
                                 </div>
-                                <div className="flex-1 p-4 bg-[rgba(135,169,226,0.15)]">
+                                <div className="flex-1 p-4 bg-[rgba(135,169,226,0.55)]">
                                     <div className="text-center text-[#151518] text-base md:text-base font-semibold leading-[140%]">0</div>
                                 </div>
                             </div>
 
                             {/* Асцит */}
                             <div className="flex items-center">
-                                <div className="w-[220px] md:w-[220px] p-4 bg-[rgba(224,219,244,0.40)] flex items-center">
+                                <div className="w-[220px] md:w-[220px] p-4 bg-white flex items-center">
                                     <div className="text-[#61279E] text-base md:text-base font-semibold leading-[140%] text-center">
                                         Асцит
                                     </div>
                                 </div>
-                                <div className="flex-1 p-4 bg-white">
+                                <div className="flex-1 p-4 bg-[rgba(135,169,226,0.15)]">
                                     <div className="text-center text-[#151518] text-base md:text-base font-semibold leading-[140%]">23%</div>
                                 </div>
-                                <div className="flex-1 p-4 bg-white">
+                                <div className="flex-1 p-4 bg-[rgba(135,169,226,0.15)]">
                                     <div className="text-center text-[#151518] text-base md:text-base font-semibold leading-[140%]">11 (9%)</div>
                                 </div>
-                                <div className="flex-1 p-4 bg-white">
+                                <div className="flex-1 p-4 bg-[rgba(135,169,226,0.15)]">
                                     <div className="text-center text-[#151518] text-base md:text-base font-semibold leading-[140%]">15%</div>
                                 </div>
-                                <div className="flex-1 p-4 bg-white">
+                                <div className="flex-1 p-4 bg-[rgba(135,169,226,0.15)]">
                                     <div className="text-center text-[#151518] text-base md:text-base font-semibold leading-[140%]">4 (7%)</div>
                                 </div>
                             </div>
 
                             {/* Рвота */}
                             <div className="flex items-center">
-                                <div className="w-[220px] md:w-[220px] p-4 bg-white flex items-center">
+                                <div className="w-[220px] md:w-[220px] p-4 bg-[rgba(224,219,244,0.40)] flex items-center">
                                     <div className="text-[#61279E] text-base md:text-base font-semibold leading-[140%] text-center">
                                         Рвота
                                     </div>
@@ -296,17 +296,17 @@ const SafetyModal = ({ isOpen, onClose }: SafetyModalProps) => {
                                 <div className="flex-1 p-4 bg-[rgba(97,39,158,0.55)]">
                                     <div className="text-center text-white text-base md:text-base font-semibold leading-[140%]">3 (2%)</div>
                                 </div>
-                                <div className="flex-1 p-4 bg-[rgba(135,169,226,0.15)]">
+                                <div className="flex-1 p-4 bg-[rgba(135,169,226,0.55)]">
                                     <div className="text-center text-[#151518] text-base md:text-base font-semibold leading-[140%]">19%</div>
                                 </div>
-                                <div className="flex-1 p-4 bg-[rgba(135,169,226,0.15)]">
+                                <div className="flex-1 p-4 bg-[rgba(135,169,226,0.55)]">
                                     <div className="text-center text-[#151518] text-base md:text-base font-semibold leading-[140%]">0</div>
                                 </div>
                             </div>
 
                             {/* Анемия */}
                             <div className="flex items-center">
-                                <div className="w-[220px] md:w-[220px] p-4 bg-[rgba(224,219,244,0.40)] flex items-center">
+                                <div className="w-[220px] md:w-[220px] p-4 bg-white flex items-center">
                                     <div className="text-[#61279E] text-base md:text-base font-semibold leading-[140%] text-center">
                                         Анемия
                                     </div>
@@ -327,7 +327,7 @@ const SafetyModal = ({ isOpen, onClose }: SafetyModalProps) => {
 
                             {/* Запор */}
                             <div className="flex items-center">
-                                <div className="w-[220px] md:w-[220px] p-4 bg-white flex items-center">
+                                <div className="w-[220px] md:w-[220px] p-4 bg-[rgba(224,219,244,0.40)] flex items-center">
                                     <div className="text-[#61279E] text-base md:text-base font-semibold leading-[140%] text-center">
                                         Запор
                                     </div>
@@ -338,17 +338,17 @@ const SafetyModal = ({ isOpen, onClose }: SafetyModalProps) => {
                                 <div className="flex-1 p-4 bg-[rgba(97,39,158,0.55)]">
                                     <div className="text-center text-white text-base md:text-base font-semibold leading-[140%]">1 (1%)</div>
                                 </div>
-                                <div className="flex-1 p-4 bg-[rgba(135,169,226,0.15)]">
+                                <div className="flex-1 p-4 bg-[rgba(135,169,226,0.55)]">
                                     <div className="text-center text-[#151518] text-base md:text-base font-semibold leading-[140%]">19%</div>
                                 </div>
-                                <div className="flex-1 p-4 bg-[rgba(135,169,226,0.15)]">
+                                <div className="flex-1 p-4 bg-[rgba(135,169,226,0.55)]">
                                     <div className="text-center text-[#151518] text-base md:text-base font-semibold leading-[140%]">0</div>
                                 </div>
                             </div>
 
                             {/* Переферический отек */}
                             <div className="flex items-center">
-                                <div className="w-[220px] md:w-[220px] p-4 bg-[rgba(224,219,244,0.40)] flex items-center">
+                                <div className="w-[220px] md:w-[220px] p-4 bg-white flex items-center">
                                     <div className="text-[#61279E] text-base md:text-base font-semibold leading-[140%] text-center">
                                         Переферический отек
                                     </div>
@@ -369,7 +369,7 @@ const SafetyModal = ({ isOpen, onClose }: SafetyModalProps) => {
 
                             {/* Гипертермия */}
                             <div className="flex items-center">
-                                <div className="w-[220px] md:w-[220px] p-4 bg-white flex items-center">
+                                <div className="w-[220px] md:w-[220px] p-4 bg-[rgba(224,219,244,0.40)] flex items-center">
                                     <div className="text-[#61279E] text-base md:text-base font-semibold leading-[140%] text-center">
                                         Гипертермия
                                     </div>
@@ -380,17 +380,17 @@ const SafetyModal = ({ isOpen, onClose }: SafetyModalProps) => {
                                 <div className="flex-1 p-4 bg-[rgba(97,39,158,0.55)]">
                                     <div className="text-center text-white text-base md:text-base font-semibold leading-[140%]">0</div>
                                 </div>
-                                <div className="flex-1 p-4 bg-[rgba(135,169,226,0.15)]">
+                                <div className="flex-1 p-4 bg-[rgba(135,169,226,0.55)]">
                                     <div className="text-center text-[#151518] text-base md:text-base font-semibold leading-[140%]">10%</div>
                                 </div>
-                                <div className="flex-1 p-4 bg-[rgba(135,169,226,0.15)]">
+                                <div className="flex-1 p-4 bg-[rgba(135,169,226,0.55)]">
                                     <div className="text-center text-[#151518] text-base md:text-base font-semibold leading-[140%]">2 (3%)</div>
                                 </div>
                             </div>
 
                             {/* Астения */}
                             <div className="flex items-center">
-                                <div className="w-[220px] md:w-[220px] p-4 bg-[rgba(224,219,244,0.40)] flex items-center">
+                                <div className="w-[220px] md:w-[220px] p-4 bg-white flex items-center">
                                     <div className="text-[#61279E] text-base md:text-base font-semibold leading-[140%] text-center">
                                         Астения
                                     </div>
@@ -411,7 +411,7 @@ const SafetyModal = ({ isOpen, onClose }: SafetyModalProps) => {
 
                             {/* Боль в спине */}
                             <div className="flex items-center">
-                                <div className="w-[220px] md:w-[220px] p-4 bg-white flex items-center">
+                                <div className="w-[220px] md:w-[220px] p-4 bg-[rgba(224,219,244,0.40)] flex items-center">
                                     <div className="text-[#61279E] text-base md:text-base font-semibold leading-[140%] text-center">
                                         Боль в спине
                                     </div>
@@ -422,17 +422,17 @@ const SafetyModal = ({ isOpen, onClose }: SafetyModalProps) => {
                                 <div className="flex-1 p-4 bg-[rgba(97,39,158,0.55)]">
                                     <div className="text-center text-white text-base md:text-base font-semibold leading-[140%]">1 (1%)</div>
                                 </div>
-                                <div className="flex-1 p-4 bg-[rgba(135,169,226,0.15)]">
+                                <div className="flex-1 p-4 bg-[rgba(135,169,226,0.55)]">
                                     <div className="text-center text-[#151518] text-base md:text-base font-semibold leading-[140%]">12%</div>
                                 </div>
-                                <div className="flex-1 p-4 bg-[rgba(135,169,226,0.15)]">
+                                <div className="flex-1 p-4 bg-[rgba(135,169,226,0.55)]">
                                     <div className="text-center text-[#151518] text-base md:text-base font-semibold leading-[140%]">0</div>
                                 </div>
                             </div>
 
                             {/* Головная боль */}
                             <div className="flex items-center">
-                                <div className="w-[220px] md:w-[220px] p-4 bg-[rgba(224,219,244,0.40)] flex items-center">
+                                <div className="w-[220px] md:w-[220px] p-4 bg-white flex items-center">
                                     <div className="text-[#61279E] text-base md:text-base font-semibold leading-[140%] text-center">
                                         Головная боль
                                     </div>
@@ -464,17 +464,17 @@ const SafetyModal = ({ isOpen, onClose }: SafetyModalProps) => {
                                 <div className="flex-1 h-[98px] p-4 bg-[rgba(97,39,158,0.55)] flex items-center justify-center">
                                     <div className="text-center text-white text-base md:text-base font-semibold leading-[140%]">6 (5%)</div>
                                 </div>
-                                <div className="flex-1 h-[98px] p-4 bg-[rgba(135,169,226,0.15)] flex items-center justify-center">
+                                <div className="flex-1 h-[98px] p-4 bg-[rgba(135,169,226,0.55)] flex items-center justify-center">
                                     <div className="text-center text-[#151518] text-base md:text-base font-semibold leading-[140%]">5%</div>
                                 </div>
-                                <div className="flex-1 h-[98px] p-4 bg-[rgba(135,169,226,0.15)] flex items-center justify-center">
+                                <div className="flex-1 h-[98px] p-4 bg-[rgba(135,169,226,0.55)] flex items-center justify-center">
                                     <div className="text-center text-[#151518] text-base md:text-base font-semibold leading-[140%]">1 (2%)</div>
                                 </div>
                             </div>
 
                             {/* Одышка */}
                             <div className="flex items-center">
-                                <div className="w-[220px] md:w-[220px] p-4 bg-[rgba(224,219,244,0.40)] flex items-center">
+                                <div className="w-[220px] md:w-[220px] p-4 bg-white flex items-center">
                                     <div className="text-[#61279E] text-base md:text-base font-semibold leading-[140%] text-center">
                                         Одышка
                                     </div>
@@ -495,7 +495,7 @@ const SafetyModal = ({ isOpen, onClose }: SafetyModalProps) => {
 
                             {/* Вздутие живота */}
                             <div className="flex items-center">
-                                <div className="w-[220px] md:w-[220px] p-4 bg-white flex items-center">
+                                <div className="w-[220px] md:w-[220px] p-4 bg-[rgba(224,219,244,0.40)] flex items-center">
                                     <div className="text-[#61279E] text-base md:text-base font-semibold leading-[140%] text-center">
                                         Вздутие живота
                                     </div>
@@ -506,17 +506,17 @@ const SafetyModal = ({ isOpen, onClose }: SafetyModalProps) => {
                                 <div className="flex-1 p-4 bg-[rgba(97,39,158,0.55)]">
                                     <div className="text-center text-white text-base md:text-base font-semibold leading-[140%]">1 (1%)</div>
                                 </div>
-                                <div className="flex-1 p-4 bg-[rgba(135,169,226,0.15)]">
+                                <div className="flex-1 p-4 bg-[rgba(135,169,226,0.55)]">
                                     <div className="text-center text-[#151518] text-base md:text-base font-semibold leading-[140%]">8%</div>
                                 </div>
-                                <div className="flex-1 p-4 bg-[rgba(135,169,226,0.15)]">
+                                <div className="flex-1 p-4 bg-[rgba(135,169,226,0.55)]">
                                     <div className="text-center text-[#151518] text-base md:text-base font-semibold leading-[140%]">0</div>
                                 </div>
                             </div>
 
                             {/* Гипонатриемия */}
                             <div className="flex items-center">
-                                <div className="w-[220px] md:w-[220px] p-4 bg-[rgba(224,219,244,0.40)] flex items-center">
+                                <div className="w-[220px] md:w-[220px] p-4 bg-white flex items-center">
                                     <div className="text-[#61279E] text-base md:text-base font-semibold leading-[140%] text-center">
                                         Гипонатриемия
                                     </div>
@@ -548,17 +548,17 @@ const SafetyModal = ({ isOpen, onClose }: SafetyModalProps) => {
                                 <div className="flex-1 h-[76px] p-4 bg-[rgba(97,39,158,0.55)] flex items-center justify-center">
                                     <div className="text-center text-white text-base md:text-base font-semibold leading-[140%]">7 (6%)</div>
                                 </div>
-                                <div className="flex-1 h-[76px] p-4 bg-[rgba(135,169,226,0.15)] flex items-center justify-center">
+                                <div className="flex-1 h-[76px] p-4 bg-[rgba(135,169,226,0.55)] flex items-center justify-center">
                                     <div className="text-center text-[#151518] text-base md:text-base font-semibold leading-[140%]">7%</div>
                                 </div>
-                                <div className="flex-1 h-[76px] p-4 bg-[rgba(135,169,226,0.15)] flex items-center justify-center">
+                                <div className="flex-1 h-[76px] p-4 bg-[rgba(135,169,226,0.55)] flex items-center justify-center">
                                     <div className="text-center text-[#151518] text-base md:text-base font-semibold leading-[140%]">1 (2%)</div>
                                 </div>
                             </div>
 
                             {/* Удлинение интервала QT на экг */}
                             <div className="flex items-stretch">
-                                <div className="w-[220px] md:w-[220px] p-4 bg-[rgba(224,219,244,0.40)] flex items-center">
+                                <div className="w-[220px] md:w-[220px] p-4 bg-white flex items-center">
                                     <div className="text-[#61279E] text-base md:text-base font-semibold leading-[140%] text-left">
                                         Удлинение интервала QT на экг
                                     </div>
