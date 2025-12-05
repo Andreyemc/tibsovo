@@ -13,10 +13,10 @@ const ProductInstruct = () => {
           <div className="w-12 h-12 md:w-[72px] md:h-[72px] rounded-xl md:rounded-2xl bg-white shadow-[0_0_20px_0_rgba(97,39,158,0.08)] flex items-center justify-center flex-shrink-0">
             <img src={tibsovo1} alt="Доза препарата" className="w-7 h-7 md:w-auto md:h-auto" />
           </div>
-          <p className="text-white text-xs md:text-base font-semibold md:font-normal leading-[140%] md:leading-[22px] px-2 md:py-3 md:px-4 py-2">
+          <p className="text-white text-xs md:text-base font-semibold md:font-semibold leading-[140%] md:leading-[22px] px-2 md:py-3 md:px-4 py-2">
             Рекомендуемая доза препарата ТИБСОВО
             <span className="text-xs md:text-base">®</span>: 500 мг ТИБСОВО
-            <span className="text-xs md:text-base">®</span> один раз в сутки
+            <span className="text-xs md:text-base">®</span> один раз в сутки<sup>7</sup>
           </p>
         </div>
 
@@ -30,8 +30,8 @@ const ProductInstruct = () => {
                 <img src={tibsovo2} alt="Доза препарата" className="w-7 h-7 md:w-auto md:h-auto" />
               </div>
               <p className="text-[#151518] text-xs md:text-base font-normal leading-[140%] md:leading-[22px] px-2 md:px-4 md:py-3">
-                Таблетки принимают один раз в сутки,
-                <br className="hidden md:block" /> каждый раз примерно в одно и то же время.
+                2 таблетки принимают один раз в сутки,
+                <br className="hidden md:block" /> каждый раз примерно в одно и то же время<sup>7</sup>.
               </p>
             </div>
 
@@ -41,7 +41,7 @@ const ProductInstruct = () => {
                 <img src={tibsovo3} alt="Доза препарата" className="w-7 h-7 md:w-auto md:h-auto" />
               </div>
               <p className="text-[#151518] text-xs md:text-base font-normal leading-[140%] md:leading-[22px] px-2 md:px-4 md:py-3">
-                Таблетки следует проглатывать <br className="hidden md:block" /> целиком, запивая водой.
+                Таблетки следует проглатывать <br className="hidden md:block" /> целиком, запивая водой<sup>7</sup>.
               </p>
             </div>
           </div>
@@ -67,7 +67,7 @@ const ProductInstruct = () => {
               </div>
               <p className="text-[#151518] text-xs md:text-base font-normal leading-[140%] md:leading-[22px] px-2 md:px-4 md:py-3">
                 Пациенты должны отказаться от употребления грейпфрута и
-                грейпфрутового сока во время лечения.
+                грейпфрутового сока во время лечения<sup>7</sup>.
               </p>
             </div>
           </div>

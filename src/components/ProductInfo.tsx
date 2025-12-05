@@ -2,10 +2,12 @@ import tibsovoImage from '../assets/product-tbs.png'
 import ProductInstruct from './ProductInstruct'
 import IconListItem from './IconListItem'
 import warnIcon from '../assets/icons/warn.svg'
+import { RefObject, useRef } from 'react'
 
 const ProductInfo = () => {
+  const productInfoRef = useRef<HTMLDivElement>(null);
   return (
-    <div className="w-full px-0 md:px-4 bg-white relative">
+    <div id="product-info" className="w-full px-0 md:px-4 bg-white relative" ref={productInfoRef}>
       <div className="mx-auto w-full max-w-[1360px]">
         <div className="flex flex-col relative">
           {/* Мобильная версия - абсолютное позиционирование */}
@@ -23,19 +25,21 @@ const ProductInfo = () => {
                 <div className="flex flex-col gap-4 md:gap-0 md:mt-2">
                   {/* Большой заголовок */}
                   <h2 className="text-[#61279E] text-2xl md:text-[40px] font-semibold leading-[120%] md:leading-[44px] tracking-[-0.48px] md:tracking-[-1.2px]">
-                    Режим дозирования ТИБСОВО<span className="text-2xl md:text-[40px]">®</span>: один раз в день
+                    Режим дозирования ТИБСОВО<span className="text-2xl md:text-[40px]">®</span>: один раз в день<sup>7</sup>
                   </h2>
                   
                   {/* Текст описания */}
                   <p className="text-[#151518] text-sm md:text-xl font-normal leading-[140%] md:leading-[28px] md:mt-6">
-                    Препарат ТИБСОВО<span className="text-sm md:text-xl">®</span> в режиме монотерапии показан для лечения взрослых пациентов с местнораспространенной или метастатической холангиокарциномой с мутацией в гене IDH1 R132, ранее получавших лечение, как минимум, в рамках одной линии системной терапии
+                    Препарат ТИБСОВО<span className="text-sm md:text-xl">®</span> в режиме монотерапии показан для лечения взрослых пациентов с местнораспространенной или метастатической холангиокарциномой
+                     с мутацией в гене IDH1 R132, ранее получавших лечение, как минимум, в рамках 
+                     одной линии системной терапии<sup>7</sup>.
                   </p>
                 </div>
               </div>
               
               {/* Кнопка */}
-              <button className="mt-8 md:mt-12 self-stretch md:self-start px-8 py-4 rounded-lg border border-[#151518] text-[#151518] text-sm md:text-base font-semibold leading-[100%] hover:opacity-90 transition-opacity cursor-pointer">
-                Скачать брошюру
+              <button className="mt-8 md:mt-12 self-stretch md:self-start px-8 py-4 rounded-lg border border-[#151518] text-[#151518] text-sm md:text-base font-semibold leading-[140%] hover:opacity-90 transition-opacity cursor-pointer">
+              Скачать брошюру: режим дозирования
               </button>
             </div>
 
@@ -61,11 +65,12 @@ const ProductInfo = () => {
               icon={warnIcon}
               iconSize={56}
               text=""
-              boldText={`Лечение следует продолжать до прогрессии заболевания \n или до тех пор, пока пациент не перестанет переносить терапию.`}
+              boldText={`Лечение следует продолжать до прогрессии заболевания \n или до тех пор, пока пациент не перестанет переносить терапию.<sup>7</sup>`}
               color="#87A9E2"
               showGradient={true}
               gradientOpacity={0.8}
               textClassName="text-xs md:text-base font-semibold md:font-normal leading-[140%] md:leading-[22px]"
+              parentRef={productInfoRef as RefObject<HTMLElement>}
             />
           </div>
         </div>

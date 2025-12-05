@@ -124,7 +124,7 @@ const AnimatedEffectBackground: React.FC<AnimatedEffectBackgroundProps> = ({ cla
         if (!center) return;
 
         // Получаем текущую позицию круга
-        const group = groups[wave.circleIndex];
+        // const group = groups[wave.circleIndex];
         const speed = 0.2 + wave.circleIndex * 0.08;
         const radius = 5 + wave.circleIndex * 2;
         const offsetX = Math.cos(elapsed * speed + wave.circleIndex * 2.1) * radius;
@@ -158,8 +158,8 @@ const AnimatedEffectBackground: React.FC<AnimatedEffectBackgroundProps> = ({ cla
     <svg
       ref={svgRef}
       width="322"
-      height="261"
-      viewBox="0 0 322 261"
+      height="400"
+      viewBox="0 0 322 400"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       className={`absolute top-0 right-0 pointer-events-none ${className}`}

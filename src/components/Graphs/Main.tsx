@@ -12,8 +12,8 @@ const Graphs = () => {
 
   const tabs = [
     { id: 'common' as const, label: 'Общая выживаемость' },
-    { id: 'noProgress' as const, label: 'Пациенты с длительным ответом' },
-    { id: 'longTime' as const, label: 'Выживаемость без прогрессии' },
+    { id: 'noProgress' as const, label: 'Выживаемость без прогрессии' },
+    { id: 'longTime' as const, label: 'Пациенты с длительным ответом' },
   ]
 
   return (

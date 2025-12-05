@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import logo from '../assets/logo.svg'
+import logo from '../assets/logo22.svg'
 
 function Header() {
     const [isModalOpen, setIsModalOpen] = useState(false)
@@ -19,12 +19,36 @@ function Header() {
         'Безопасность'
     ]
 
+    // Маппинг названий пунктов меню к id компонентов
+    const navItemToId: Record<string, string> = {
+        'Эффективность': 'efficiency',
+        'Способ применения': 'product-info',
+        'Механизм действия': 'mechanism-of-action',
+        'Безопасность': 'safety'
+    }
+
+    const scrollToSection = (itemName: string) => {
+        const sectionId = navItemToId[itemName]
+        if (sectionId) {
+            const element = document.getElementById(sectionId)
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth', block: 'start' })
+            }
+        }
+    }
+
     const toggleModal = () => {
         setIsModalOpen(!isModalOpen)
     }
 
     const closeModal = () => {
         setIsModalOpen(false)
+    }
+
+    const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, itemName: string) => {
+        e.preventDefault()
+        scrollToSection(itemName)
+        closeModal()
     }
 
     return (
@@ -45,12 +69,13 @@ function Header() {
                     </div>
 
                     {/* Desktop Navigation */}
-                    <nav className="hidden md:flex items-center lg:gap-6 md:gap-2 min-w-[240px] max-w-full flex-wrap">
+                    <nav className="hidden md:flex items-center lg:gap-7 md:gap-2 min-w-[240px] max-w-full flex-wrap">
                         {navItems.map((item, index) => (
                             <a
                                 key={index}
                                 href="#"
-                                className="text-[#151518] text-sm font-semibold leading-[1.4] hover:opacity-80 transition-opacity"
+                                onClick={(e) => handleNavClick(e, item)}
+                                className="text-[#151518] text-sm font-semibold leading-[1.4] hover:opacity-80 transition-opacity cursor-pointer"
                             >
                                 {item}
                             </a>
@@ -145,7 +170,7 @@ function Header() {
                         <a
                             key={index}
                             href="#"
-                            onClick={closeModal}
+                            onClick={(e) => handleNavClick(e, item)}
                             className="text-[#151518] text-base font-semibold leading-[140%] cursor-pointer hover:opacity-80 transition-opacity"
                         >
                             {item}

@@ -3,7 +3,7 @@ import logo from '../assets/logo-white.svg'
 function Footer() {
   return (
     <footer
-      className="relative z-50 w-full flex flex-col items-center justify-center px-4 md:px-5 lg:px-20 py-6 md:py-10 mt-4 bg-[#f2f1fb]"
+      className="relative z-50 w-full flex flex-col items-center justify-center px-4 md:px-5 lg:px-20 py-6 md:py-14 mt-4 bg-[#f2f1fb]"
     >
       <div
         className="w-full flex flex-col items-start max-w-[1140px]"
