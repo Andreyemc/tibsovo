@@ -121,7 +121,7 @@ const ClarIDHyModal = ({ isOpen, onClose }: ClarIDHyModalProps) => {
 
             {/* Randomization Info */}
             <div className="w-full md:w-[168px] flex flex-col items-start gap-4 md:mt-[123px]">
-              <img src={arrowSvg} alt="Arrow" className="w-full" />
+              <img src={arrowSvg} alt="Arrow" className="hidden md:block w-full" />
               <p className="text-sm md:text-base font-normal leading-[140%] text-[#151518]">
                 Рандомизация (2:1)
               </p>
@@ -175,7 +175,7 @@ const ClarIDHyModal = ({ isOpen, onClose }: ClarIDHyModalProps) => {
 
             {/* Treatment Description */}
             <div className="w-full md:w-[168px] gap-4  text-sm md:text-base font-normal leading-[140%] text-[#151518] md:mt-[123px]">
-              <img src={arrowSvg} alt="Arrow" className="w-full pb-6" />
+              <img src={arrowSvg} alt="Arrow" className="hidden md:block w-full pb-6" />
               <p className="text-sm md:text-base font-normal leading-[140%] text-[#151518] pb-4">
               Лечение до прогрессирования заболевания, появления неприемлемой токсичности или отмены препарата.
               </p>

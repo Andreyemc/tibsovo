@@ -30,7 +30,7 @@ const DemografiyaModal = ({ isOpen, onClose }: DemografiyaModalProps) => {
 
             {/* Modal Content - Slides in from right */}
             <div
-                className="fixed right-0 top-0 h-full w-full md:w-1/2 z-[101] bg-white shadow-lg overflow-y-auto transform transition-transform duration-300 ease-out"
+                className="fixed right-0 top-0 h-full w-full lg:w-2/3 2xl:w-1/2  z-[101] bg-white shadow-lg overflow-y-auto transform transition-transform duration-300 ease-out"
                 onClick={(e) => e.stopPropagation()}
             >
                 {/* Header */}
